@@ -27,7 +27,7 @@ export function generatePageMetadata(params: SEOParams): Metadata {
     const cityName = formatCityName(city);
     const brandName = formatBrandName(brand);
     title = `${brandName} Appliance Repair in ${cityName}, CO | Expert ${brandName} Service`;
-    description = `Trusted ${brandName} appliance repair in ${cityName}, CO. Factory-trained technicians for all ${brandName} appliances. Same-day service available. Call ${PHONE} now!`;
+    description = `Trusted ${brandName} appliance repair in ${cityName}, CO. We service all ${brandName} appliances. Same-day service available. Call ${PHONE} now!`;
   } else if (city && appliance) {
     const cityName = formatCityName(city);
     const applianceName = formatApplianceName(appliance);
@@ -37,7 +37,7 @@ export function generatePageMetadata(params: SEOParams): Metadata {
     const brandName = formatBrandName(brand);
     const applianceName = formatApplianceName(appliance);
     title = `${brandName} ${applianceName} Repair Denver Metro | Expert ${brandName} Service`;
-    description = `Professional ${brandName} ${applianceName} repair in the Denver Metro area. Factory-trained technicians, same-day service. Call ${PHONE}!`;
+    description = `Professional ${brandName} ${applianceName} repair in the Denver Metro area. Same-day service, upfront pricing. Call ${PHONE}!`;
   } else if (city) {
     const cityName = formatCityName(city);
     title = `Appliance Repair ${cityName}, CO | Same-Day Service | ${SITE_NAME}`;
@@ -45,7 +45,7 @@ export function generatePageMetadata(params: SEOParams): Metadata {
   } else if (brand) {
     const brandName = formatBrandName(brand);
     title = `${brandName} Appliance Repair Denver Metro | ${SITE_NAME}`;
-    description = `Expert ${brandName} appliance repair across the Denver Metro area. Factory-trained technicians, all major ${brandName} appliances. Same-day service. Call ${PHONE}!`;
+    description = `Expert ${brandName} appliance repair across the Denver Metro area. All major ${brandName} appliances. Same-day service. Call ${PHONE}!`;
   } else if (appliance) {
     const applianceName = formatApplianceName(appliance);
     title = `${applianceName} Repair Denver Metro | Same-Day Service | ${SITE_NAME}`;

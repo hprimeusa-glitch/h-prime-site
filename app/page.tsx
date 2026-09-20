@@ -74,7 +74,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">EPA Certified</h3>
               <p className="text-gray-600">
-                EPA certified and Whirlpool factory-trained technicians. Professional service you can trust for all major appliance brands.
+                EPA certified technicians. Professional service you can trust for all major appliance brands.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -150,7 +150,7 @@ export default function HomePage() {
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                Our EPA certified and Whirlpool factory-trained technicians provide <strong>same-day service</strong> across the Denver Metro area —
+                Our EPA certified technicians provide <strong>same-day service</strong> across the Denver Metro area —
                 Denver, Aurora, Lakewood, Arvada, and 30+ surrounding cities. Transparent pricing with no hidden fees.
               </p>
             </div>

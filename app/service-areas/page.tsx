@@ -63,7 +63,7 @@ export default function ServiceAreasPage() {
             <div className="text-gray-700 space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
                 For over 20 years, <strong>H-Prime Appliance Repair Services</strong> has been the trusted choice for appliance 
-                repair in Denver Metro area. Our factory-trained technicians provide same-day service to homes and businesses 
+                repair in Denver Metro area. Our technicians provide same-day service to homes and businesses 
                 in Denver, Arapahoe, Jefferson, Adams, Douglas, and Boulder counties.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
