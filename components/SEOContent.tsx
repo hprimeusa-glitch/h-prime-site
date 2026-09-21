@@ -89,9 +89,9 @@ function renderContent({ city, appliance, brand, county }: any) {
           </p>
           
           <p className="text-base md:text-lg leading-relaxed">
-            {brand} appliances are known for quality and innovation, and they deserve quality repair service. Our technicians 
-            undergo continuous training on {brand} products to ensure they can handle any issue. We use genuine {brand} parts 
-            for all repairs in {city}, ensuring your appliance works like new.
+            {brand} appliances are built around their own control boards, sensors and part numbers, and a repair goes faster when the
+            technician has worked on that platform before. Our technicians service {brand} appliances across the Denver Metro area and
+            source parts matched to your model number, so the fix holds.
           </p>
           
           <p className="text-base md:text-lg leading-relaxed">
@@ -115,9 +115,8 @@ function renderContent({ city, appliance, brand, county }: any) {
           </p>
           
           <p className="text-base md:text-lg leading-relaxed">
-            Our experienced technicians have repaired thousands of {brand} {appliance.toLowerCase()}s in Colorado. 
-            No matter what's wrong with your {appliance.toLowerCase()}, we have the expertise to fix it right the first time. 
-            We use only authentic {brand} replacement parts and back all repairs with our service guarantee.
+            Our technicians work on {brand} {appliance.toLowerCase()}s across the Denver Metro area and diagnose before quoting,
+            so you know the price before any work starts. Parts are matched to your {brand} model number rather than a generic fit.
           </p>
           
           <p className="text-base md:text-lg leading-relaxed">
@@ -167,7 +166,7 @@ function renderContent({ city, appliance, brand, county }: any) {
           </p>
           
           <p className="text-base md:text-lg leading-relaxed">
-            Our technicians undergo continuous training on {brand} products and use only genuine {brand} replacement parts. 
+            Our technicians service every {brand} appliance line and source parts matched to your model number. 
             This ensures your appliance is repaired to manufacturer specifications and continues to perform reliably. We provide 
             {brand} appliance repair in Denver Metro with same-day service available for most areas.
           </p>

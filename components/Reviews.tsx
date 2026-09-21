@@ -1,6 +1,12 @@
 import { Star } from 'lucide-react';
-import { reviews } from '@/lib/data/reviews';
+import { reviews as allReviews, type Review } from '@/lib/data/reviews';
 import { GOOGLE_BUSINESS_PROFILE_URL } from '@/lib/utils';
+
+interface ReviewsProps {
+  /** A subset to show instead of the default list, e.g. reviews that mention one brand. */
+  items?: Review[];
+  title?: string;
+}
 
 // Google-style avatar colors (different colors for each reviewer)
 const avatarColors = [
@@ -14,13 +20,14 @@ const avatarColors = [
   'bg-teal-500'
 ];
 
-export default function Reviews() {
+export default function Reviews({ items, title = 'What Our Customers Say' }: ReviewsProps = {}) {
+  const reviews = items && items.length > 0 ? items : allReviews;
   return (
     <section id="reviews" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Customers Say
+            {title}
           </h2>
           <p className="text-xl text-gray-600 mb-4">
             Real reviews from Google Business Profile

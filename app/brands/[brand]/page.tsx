@@ -5,11 +5,19 @@ import { Clock, Shield, Wrench, Users } from 'lucide-react';
 import Hero from '@/components/Hero';
 import Reviews from '@/components/Reviews';
 import SEOContent from '@/components/SEOContent';
+import BrandDeepPage from '@/components/BrandDeepPage';
 import { brands } from '@/lib/data/brands';
 import { appliances } from '@/lib/data/appliances';
 import { getAppliancesForBrand } from '@/lib/data/serviceBrands';
+import { getBrandContent } from '@/lib/data/brandContent';
+import { brandReviews } from '@/lib/data/brandReviews';
 import { generatePageMetadata } from '@/lib/seo/metadata';
-import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo/schema';
+import {
+  generateLocalBusinessSchema,
+  generateServiceSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+} from '@/lib/seo/schema';
 
 interface PageProps {
   params: Promise<{
@@ -33,8 +41,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cleanSlug = brandSlug.replace('-repair', '');
   const brand = brands.find(b => b.slug === cleanSlug);
   if (!brand) return {};
-  
-  return generatePageMetadata({ brand: cleanSlug });
+
+  const base = generatePageMetadata({ brand: cleanSlug });
+  const deep = getBrandContent(cleanSlug);
+  if (!deep) return base;
+
+  // Hand-written pages carry their own title and description, written against the
+  // queries the page actually receives; canonical, robots and images stay as built.
+  return {
+    ...base,
+    title: deep.title,
+    description: deep.description,
+    openGraph: { ...(base.openGraph ?? {}), title: deep.title, description: deep.description },
+    twitter: { ...(base.twitter ?? {}), title: deep.title, description: deep.description },
+  };
 }
 
 export default async function BrandRepairPage({ params }: PageProps) {
@@ -42,19 +62,39 @@ export default async function BrandRepairPage({ params }: PageProps) {
   // Remove -repair suffix to find brand
   const cleanSlug = brandSlug.replace('-repair', '');
   const brand = brands.find(b => b.slug === cleanSlug);
-  
+
   if (!brand) {
     notFound();
   }
-  
+
   // Get appliances that this brand manufactures
   const relevantApplianceSlugs = getAppliancesForBrand(cleanSlug);
   const relevantAppliances = appliances.filter(a => relevantApplianceSlugs.includes(a.slug));
-  
+
   const localBusinessSchema = generateLocalBusinessSchema({ brand: cleanSlug });
   const serviceSchema = generateServiceSchema({ brand: cleanSlug });
   const breadcrumbSchema = generateBreadcrumbSchema({ brand: cleanSlug });
-  
+
+  const deep = getBrandContent(cleanSlug);
+
+  if (deep) {
+    const faqSchema = generateFAQSchema(deep.faqs);
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <BrandDeepPage
+          content={deep}
+          brand={brand}
+          applianceSlugs={relevantApplianceSlugs}
+          reviews={brandReviews[cleanSlug] ?? []}
+        />
+      </>
+    );
+  }
+
   return (
     <>
       {/* JSON-LD Schema */}
@@ -70,14 +110,14 @@ export default async function BrandRepairPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
-      <Hero 
+
+      <Hero
         title={`Expert ${brand.name} Appliance Repair in Denver Metro area`}
         subtitle="Experienced technicians • Same-day service • Upfront pricing"
         brand={brand.name}
         brandLogo={brand.logo}
       />
-      
+
       {/* Appliances Section - Filtered (hidden for brands with no matching service pages, e.g. HVAC) */}
       {relevantAppliances.length > 0 && (
         <section className="py-12 bg-white">
@@ -152,13 +192,12 @@ export default async function BrandRepairPage({ params }: PageProps) {
           </div>
         </div>
       </section>
-      
+
       {/* SEO Content */}
       <SEOContent brand={cleanSlug} />
-      
+
       {/* Reviews Section */}
       <Reviews />
     </>
   );
 }
-

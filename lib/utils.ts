@@ -26,6 +26,8 @@ export const BUSINESS_ADDRESS = 'Denver, CO';
 export const GOOGLE_RATING = 4.9;
 export const GOOGLE_REVIEW_COUNT = '218';
 export const GOOGLE_BUSINESS_PROFILE_URL = 'https://search.google.com/local/reviews?placeid=ChIJ6dWdU5D8_WgRf-crfXWkxY8';
+// Advertised service-call price (Google Ads copy since 2026-09-11, recorded in client-info.md)
+export const SERVICE_CALL_FEE = '$75';
 
 
 // Professional icons (Lucide React style)
