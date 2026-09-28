@@ -30,6 +30,12 @@ const NAV_LABELS: Record<string, string> = {
   warranty: 'Warranty',
   'before-you-call': 'Before you call',
   'service-area': 'Service area',
+  burners: 'Burners',
+  altitude: 'Altitude',
+  cooktop: 'Cooktop & hood',
+  condenser: 'Condenser',
+  'ice-maker': 'Ice maker',
+  'frost-noise': 'Frost & noise',
 };
 
 /**

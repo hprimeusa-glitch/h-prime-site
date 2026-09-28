@@ -9,6 +9,8 @@
  * claims, no manufacturer authorisation we do not hold.
  */
 
+import { SERVICE_CALL_FEE } from '@/lib/utils';
+
 export interface BrandSection {
   id: string;
   heading: string;
@@ -488,6 +490,219 @@ export const brandContent: Record<string, BrandContent> = {
       {
         q: 'Which Bosch appliances do you repair?',
         a: 'Dishwashers, refrigerators and freezers, wall ovens and ranges, gas and induction cooktops, ventilation hoods, and the compact washers and dryers.',
+      },
+    ],
+  },
+
+  wolf: {
+    slug: 'wolf',
+    name: 'Wolf',
+    title: 'Wolf Appliance Repair Denver | Range, Oven, Cooktop',
+    description:
+      `Independent Wolf repair across the Denver Metro area: dual fuel and gas ranges, E and M Series wall ovens, cooktops, rangetops, microwaves, hoods. ${SERVICE_CALL_FEE} service call, price before work.`,
+    h1: 'Wolf Appliance Repair in Denver',
+    subtitle: `Ranges, wall ovens, cooktops and rangetops, microwaves, ventilation • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'Wolf is the cooking brand of Sub-Zero Group, the family-owned Wisconsin company behind Sub-Zero refrigeration and Cove dishwashers. Sub-Zero introduced Wolf cooking appliances in 2000, and the ranges, rangetops, cooktops and wall ovens are built around their own parts: the dual-stacked burners, the infrared charbroiler and griddle, the E Series and M Series oven controls. H-Prime repairs Wolf cooking appliances across the Denver Metro area, from Cherry Hills Village and Greenwood Village to Highlands Ranch, Castle Pines, Golden and Broomfield.',
+      `We are an independent repair company, not part of Wolf Factory Certified Service. If your Wolf is inside its two-year warranty, that repair belongs to Wolf's own network and should cost you nothing. Once it is out of warranty, the service call is ${SERVICE_CALL_FEE}, you get a diagnosis first and a written price before any work starts.`,
+    ],
+    sections: [
+      {
+        id: 'burners',
+        heading: 'Wolf burner that clicks, will not light or burns yellow',
+        paragraphs: [
+          'Most Wolf calls start on the surface burners of a range, rangetop or gas cooktop, and Wolf itself publishes the first checks. Every one of them takes less than five minutes, so it is worth doing before you book anyone.',
+        ],
+        bullets: [
+          'Burner keeps clicking after it lights: if the burner got wet from cleaning or a spillover, let it dry; Wolf suggests a hair dryer on a low setting. Then check that the burner cap sits centered on the burner head and flat. Wolf describes its design as dual-stacked, with all burner parts in one assembly, and the cap must be seated flatly for the burner to work right.',
+          'Burner will not spark or light: the ignitors are electric and do not spark or click without power. Turn power to the unit off, wait at least 30 seconds, turn it back on and try again. During a power outage the surface burners can still be lit by hand: turn the knob to Hi and use a multi-purpose lighter.',
+          'Erratic flame or poor ignition: confirm the caps are positioned properly, clean the burner and the igniter, and push the knob in and release it to make sure it springs back.',
+          'Yellow or green flames: Wolf lists the causes as an improper air and gas mixture, burner heads not seated properly, or burner heads that need cleaning. Some yellow or orange tipping is normal on LP gas.',
+        ],
+      },
+      {
+        id: 'altitude',
+        heading: 'Does a Wolf range need a high-altitude kit in Denver?',
+        paragraphs: [
+          'It is a fair question at 5,280 feet, and Wolf answers it in its installation guides. Wolf natural gas dual fuel ranges, gas cooktops and sealed burner rangetops are documented to work without adjustment up to 10,250 feet, and the LP versions up to 8,600 feet. The current gas range installation guide gives 8,600 feet for natural gas and says LP gas ranges do not require conversion. A Denver kitchen sits well below every one of those numbers, so by Wolf documentation a range installed here does not need a high-altitude conversion.',
+          'That changes the diagnosis. Yellow flames or a burner that struggles on a Wolf in Denver are not explained by the altitude, so the checks above come first, then the gas type. If a unit was ever converted between natural gas and LP, Wolf places a sticker near the original serial tag and rating plate, and Wolf recommends that any gas conversion is done by a service technician, not by the owner.',
+        ],
+      },
+      {
+        id: 'oven',
+        heading: 'Wolf oven repair: dual fuel, E Series and M Series wall ovens',
+        paragraphs: [
+          'Before booking a visit for an oven that seems dead, rule out three documented behaviors that look like faults. A Wolf dual fuel oven turns itself off after 12 hours of continuous use, except in Dehydration or Sabbath mode. The control lock has to be reset after a power outage. And "SAb" on the oven control knob simply means the oven is in Sabbath mode. Most Wolf products with electronic controls have Sabbath mode as standard; Wolf states that M Series ovens are Star-K compliant in Sabbath mode and that the E Series oven is certified by Star-K.',
+          'Self-clean is the other source of calls. Wolf documents that Clean lasts about four hours, that the door stays locked until cleaning is complete and the oven has dropped below 550°F, and that on a double oven the second cavity cannot be used while the first one cleans. On M Series ovens a motorized latch locks the door when self-clean is set. A door that stays locked after the cycle has finished and the oven has cooled, or an oven that no longer reaches its set temperature, needs a technician.',
+          'When a Wolf oven does need parts, they are the ones Wolf names in its own warranty: electric heating elements, electronic control boards and, on the gas side, the burners. We diagnose first and quote the part for your model number.',
+        ],
+      },
+      {
+        id: 'cooktop',
+        heading: 'Wolf cooktop, rangetop, microwave and hood repair',
+        paragraphs: [
+          'Wolf gas cooktops and sealed burner rangetops follow the burner checks above. On a rangetop that does not operate at all, Wolf says to switch the breaker off for 30 seconds and back on and to verify that the gas supply shut-off valve is open; after that, Wolf says not to attempt the repair yourself. The infrared charbroiler and the thermostatically controlled griddle on some ranges and rangetops are their own burners, separate from the surface burners, and are diagnosed separately.',
+          'Wolf induction cooktops and induction ranges run on induction generators, microwaves on a magnetron tube, and ventilation hoods on blower motors. All of these are replaceable parts, and Wolf covers them for five years under its limited warranty, which matters for who pays for the part (see below).',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Wolf warranty: what it covers and who does the repair',
+        paragraphs: [
+          'Wolf residential coverage has two parts, both counted from the date of original installation. For two years, all parts and labor are covered, and that service has to be performed by Wolf Factory Certified Service. For five years, Wolf will repair or replace a defined list of parts: gas burners (appearance excluded), electric heating elements, hood blower motors, electronic control boards, magnetron tubes and induction generators. In years three to five the owner pays for labor.',
+          'Here is how that affects you. Inside the first two years, call Wolf Customer Care at 800-222-7820 or use the service locator on the Wolf website; paying an independent company for a repair Wolf covers makes no sense. In years three to five, if one of the listed parts has failed, Wolf states that an owner who uses non-certified service must contact Wolf to receive the repaired or replacement part, and Wolf does not reimburse parts bought elsewhere. If you use us for that repair, call Wolf first about the part; we will quote the labor.',
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: the Wolf rating plate',
+        paragraphs: [
+          'Wolf parts are specific to the model and serial number, and both are on the rating plate. On dual fuel and gas ranges it sits on the bottom of the control panel at the far right, just above the oven door. On sealed burner rangetops it is on the bottom of the control panel at the far right. On gas cooktops it is on the bottom of the cooktop. Send us a photo of the plate with the symptom in one sentence and, if the controls show anything, what they show.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Wolf repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Wolf ranges, ovens and cooktops in Denver, Cherry Creek, Cherry Hills Village, Greenwood Village, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Castle Pines, Castle Rock, Parker, Aurora, Lakewood, Golden, Arvada, Westminster and Broomfield. Same-day appointments depend on where you are and what failed; call with the model number and the symptom and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you Wolf factory certified service?',
+        a: 'No. H-Prime is an independent appliance repair company. Warranty repairs in the first two years must go through Wolf Factory Certified Service, which you find through Wolf Customer Care at 800-222-7820. We repair Wolf appliances that are out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Wolf repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because they depend on the model and the part: an igniter and an induction generator are very different jobs.`,
+      },
+      {
+        q: 'Why does my Wolf burner keep clicking?',
+        a: 'Usually because the burner is wet after cleaning or a spill, or the cap is not centered and flat on the burner head. Let it dry, a hair dryer on low helps, and reseat the cap. If it still clicks after that, book a visit.',
+      },
+      {
+        q: 'Does my Wolf gas range need a high-altitude kit in Denver?',
+        a: 'Not according to Wolf. Its installation guides state that Wolf gas ranges, cooktops and rangetops work without adjustment up to 8,600 feet or more, depending on the model and gas type. Denver is at about 5,280 feet.',
+      },
+      {
+        q: 'What does the Wolf warranty cover?',
+        a: 'Two years of parts and labor from installation, performed by Wolf Factory Certified Service. For five years, Wolf repairs or replaces gas burners, electric heating elements, hood blower motors, electronic control boards, magnetron tubes and induction generators, with labor paid by the owner after year two.',
+      },
+      {
+        q: 'Which Wolf appliances do you repair?',
+        a: 'Dual fuel, gas and induction ranges, E Series and M Series wall ovens, gas, electric and induction cooktops, sealed burner rangetops, microwaves, ventilation hoods and outdoor grills.',
+      },
+    ],
+  },
+
+  'sub-zero': {
+    slug: 'sub-zero',
+    name: 'Sub-Zero',
+    title: 'Sub-Zero Repair Denver | Refrigerator, Freezer, Ice Maker',
+    description:
+      `Independent Sub-Zero refrigerator repair across the Denver Metro area: warm or too cold units, Vacuum Condenser alerts, ice makers, frost, wine storage. ${SERVICE_CALL_FEE} service call, price before work.`,
+    h1: 'Sub-Zero Refrigerator Repair in Denver',
+    subtitle: `Classic, Designer, PRO, undercounter, wine storage, ice makers • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    reviewsTitle: 'What Sub-Zero owners in Denver say',
+    intro: [
+      'Sub-Zero is a family-owned Wisconsin company that started as Sub-Zero Freezer Company in 1945 and later added Wolf cooking and Cove dishwashers under Sub-Zero Group. Its refrigerators are built differently from mass-market ones: PRO, Classic and Designer models use what Sub-Zero calls Dual Refrigeration, with separate refrigerator and freezer systems, and many combination units run two compressors. That shapes the repair, because a warm refrigerator section and a warm freezer can have entirely different causes. H-Prime repairs Sub-Zero refrigeration across the Denver Metro area: built-in refrigerators and freezers, columns, undercounter units, wine storage and ice makers.',
+      `We are an independent repair company, not part of Sub-Zero Factory Certified Service. Warranty repairs go through Sub-Zero; out of warranty, the service call is ${SERVICE_CALL_FEE}, you get a diagnosis first and a written price before any work starts.`,
+    ],
+    sections: [
+      {
+        id: 'refrigerator',
+        heading: 'Sub-Zero refrigerator not cooling, or freezing food',
+        paragraphs: [
+          'Sub-Zero lists the causes of a warm refrigerator as a fan that is not working properly, a temperature sensor or thermostat fault, a compressor, evaporator or condenser issue, or a problem with the door seal. Before booking, work through the checks Sub-Zero itself publishes:',
+        ],
+        bullets: [
+          'Check the set point. On an electronic control Sub-Zero recommends 38°F for the refrigerator and 0°F for the freezer, and after any change allow 24 hours for the unit to settle.',
+          'Make sure the door closes all the way. Remove anything blocking it, turn on the door ajar alarm, and look over the gasket around the door for tears, rips or dry rot.',
+          'Clean the condenser if it has not been cleaned in the last six months (a unit younger than six months does not need it).',
+          'On a newly installed unit, give it 24 hours to cool down, and confirm it is not in Showroom Mode, which is only likely on a former display model.',
+          'Food freezing in the refrigerator section is the opposite problem: address any error message the control shows, verify the set temperatures, and clean the condenser if it is due.',
+        ],
+      },
+      {
+        id: 'condenser',
+        heading: 'Vacuum Condenser or Service flashing on a Sub-Zero',
+        paragraphs: [
+          'Sub-Zero says the "Vacuum Condenser" message appears when the unit is not running efficiently or temperatures are too high, and names three possible reasons: a dirty condenser, a door sealing issue, or a problem with the unit. The first one is yours to fix. Sub-Zero recommends cleaning the condenser every six to twelve months, more often with pets in the house, with a vacuum and a soft brush attachment. Chemical cleaners and degreasers are not necessary and not recommended by Sub-Zero. On Classic models the condenser sits behind the grille, which lifts and rotates up once the unit is switched off at the control panel.',
+          'If the message returns on a clean condenser with the doors sealing properly, or temperatures stay high, the unit needs a diagnosis. Write down the current temperatures and any service indicator before you call.',
+          'A compressor that seems to run all the time is not automatically a fault. Sub-Zero states there is no set run time; it depends on room temperature, the amount and temperature of food, and how often the door opens. On two-compressor models both may run at once, which can look like the unit never stops. Food spoiling, rising temperatures, condensation or frost alongside long run times is what makes it a repair.',
+        ],
+      },
+      {
+        id: 'ice-maker',
+        heading: 'Sub-Zero ice maker not making ice',
+        paragraphs: [
+          'Sub-Zero lists these causes for an ice maker that stops: a jammed ice cube, low water pressure, a frozen fill tube, a warm freezer, or a water valve that stays energized longer than fifteen seconds. The owner checks are short. Confirm the ice maker is turned on and the shut-off arm is in the down position. Confirm the freezer is at or below 5°F; Sub-Zero recommends 0°F. Reseat the water filter if the unit has one, and after turning the ice maker on, allow 24 hours before expecting ice. If all of that is in order and the bin stays empty, the valve, the fill tube or the ice maker itself needs a technician.',
+        ],
+      },
+      {
+        id: 'frost-noise',
+        heading: 'Frost, noises and sweating',
+        paragraphs: [
+          'Frost or ice building up in a Sub-Zero freezer traces, by Sub-Zero\'s own list, to a door left ajar, a frozen freezer drain tube, a torn gasket, a failed defrost element, or an ice maker that is not filling properly. Keep the door closed, inspect the gasket and clean the condenser if it has not been done in the last three months; a frozen drain tube or a defrost element is a repair.',
+          'A sizzling or crackling sound can be normal: moisture on or near the defrost heater makes it during defrost cycles. To tell whether a buzz or grinding comes from a fan, open all the doors; if the noise stops, it is fan related, and a fan motor that is not working properly or ice on the freezer fan is a repair visit.',
+          'Some sweating on the outside of a Sub-Zero can happen in hot or humid conditions, especially in homes without air conditioning. Dripping is not normal, and neither is condensation that keeps coming back with rising temperatures.',
+        ],
+      },
+      {
+        id: 'altitude',
+        heading: 'Sub-Zero glass doors and Denver elevation',
+        paragraphs: [
+          'Sub-Zero documents one altitude detail that applies to Denver. A high-altitude glass door is available for installations above 5,000 feet, because a glass door without it can bow at high altitude. High-altitude glass doors exist only on stainless steel Classic (CL) Series units, and the model number carries an A for altitude in place of the G for glass. Denver sits at about 5,280 feet, so if the glass door on a Classic unit has bowed, check the model number on the serial tag: it tells you whether the high-altitude version was installed.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Sub-Zero warranty and who does the repair',
+        paragraphs: [
+          'Sub-Zero residential coverage is counted from the date of original installation and has three layers. For two years, all parts and labor on the whole product. For five years, parts and labor on the sealed system: compressor, condenser, evaporator, drier and all connecting tubing. For twelve years, Sub-Zero will repair or replace those same sealed system parts, with the owner paying labor. Water filters and air purification cartridges are not covered.',
+          'Warranty service in the first two years, and on the sealed system through year five, has to be performed by Sub-Zero Factory Certified Service. H-Prime is not part of it and does not do warranty repairs, so call Sub-Zero Customer Care at 800-222-7820 first. From year six to twelve, Sub-Zero states that an owner who uses non-certified service must contact Sub-Zero directly to receive the sealed system parts. If you choose us for that repair, start with that call; we quote the labor.',
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: find the Sub-Zero serial tag',
+        paragraphs: [
+          'Sub-Zero parts are specific to the model and series. On Classic over-and-under models the serial tag is inside the refrigerator door near the top hinge; on Classic French door models, inside the left-hand door near the top hinge. On PRO 48 models it is inside the cabinet to the left of the upper freezer drawer. Undercounter units carry it inside the cabinet in the upper left area. Send a photo of the tag, the temperatures the control shows, and any message on the display.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Sub-Zero repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Sub-Zero refrigerators, freezers, wine storage and ice makers in Denver, Cherry Creek, Cherry Hills Village, Greenwood Village, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Castle Pines, Castle Rock, Parker, Aurora, Lakewood, Golden, Arvada, Westminster and Broomfield. A warm refrigerator does not wait, so call with the model number and the symptom and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you Sub-Zero factory certified service?',
+        a: 'No. H-Prime is an independent appliance repair company and does not perform Sub-Zero warranty work. Warranty repairs go through Sub-Zero Factory Certified Service, which Sub-Zero Customer Care at 800-222-7820 or the locator on the Sub-Zero website will find for you. We repair Sub-Zero units that are out of warranty.',
+      },
+      {
+        q: 'How much does Sub-Zero repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because they depend on the model and the part: a door gasket and a sealed system repair are not comparable jobs.`,
+      },
+      {
+        q: 'What does Vacuum Condenser flashing mean on my Sub-Zero?',
+        a: 'Sub-Zero says it appears when the unit is not running efficiently or temperatures are too high, for example because of a dirty condenser or a door that does not seal. Clean the condenser with a vacuum and soft brush; if the message returns or temperatures stay high, book a diagnosis.',
+      },
+      {
+        q: 'Is my Sub-Zero compressor covered by the warranty?',
+        a: 'The sealed system, including the compressor, has parts and labor coverage for five years from installation and parts coverage for twelve. Sub-Zero Factory Certified Service performs warranty repairs. After year five, owners using non-certified service get the parts directly from Sub-Zero and pay the labor.',
+      },
+      {
+        q: 'How often should I clean the Sub-Zero condenser?',
+        a: 'Sub-Zero recommends every six to twelve months, more often with pets, using a vacuum with a soft brush. No chemicals or degreasers are needed.',
+      },
+      {
+        q: 'Which Sub-Zero appliances do you repair?',
+        a: 'Classic, Designer and PRO refrigerators and freezers, refrigerator and freezer columns, undercounter refrigeration, wine storage and ice makers.',
       },
     ],
   },

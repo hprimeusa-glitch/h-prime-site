@@ -39,4 +39,18 @@ export const brandReviews: Record<string, Review[]> = {
       date: 'October 2025'
     },
   ],
+  'sub-zero': [
+    {
+      author: 'david parker',
+      text: 'Repaired my Sub Zero refrigerator. Tara’s did a great job and was very professional. Will use again.',
+      rating: 5,
+      date: 'September 2025'
+    },
+    {
+      author: 'Chuck Passaglia',
+      text: 'Great service. Taras was extremely good at diagnosing, fixing and maintaining our SubZero refrigerator.',
+      rating: 5,
+      date: 'July 2025'
+    },
+  ],
 };
