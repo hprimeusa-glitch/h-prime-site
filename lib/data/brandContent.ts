@@ -706,6 +706,365 @@ export const brandContent: Record<string, BrandContent> = {
       },
     ],
   },
+
+  electrolux: {
+    slug: 'electrolux',
+    name: 'Electrolux',
+    title: 'Electrolux Appliance Repair Denver | Oven, Dryer, Washer',
+    description:
+      `Independent Electrolux repair across the Denver Metro area: ovens and ranges, washers with E11 / E21 codes, dryers, dishwashers, fridges. ${SERVICE_CALL_FEE} service call.`,
+    h1: 'Electrolux Appliance Repair in Denver',
+    subtitle: `Ovens and ranges, washers, dryers, dishwashers, refrigerators • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'Electrolux is a Swedish appliance group headquartered in Stockholm whose brands also include Frigidaire and AEG. In the US, Electrolux kitchen and laundry appliances are warranted by Electrolux Major Appliances North America in Charlotte, North Carolina. H-Prime repairs the Electrolux line across the Denver Metro area: gas, electric and induction ranges, wall ovens and cooktops, front-load washers, gas and electric dryers, dishwashers, refrigerators and freezers.',
+      `We are an independent repair company, not an Electrolux authorized servicer. Electrolux states that service under its warranty must be obtained by contacting Electrolux and performed by Electrolux or an authorized service company, so a repair still under warranty belongs with them. Out of warranty, the service call is ${SERVICE_CALL_FEE}, you get a diagnosis first and a written price before any work starts.`,
+    ],
+    sections: [
+      {
+        id: 'oven',
+        heading: 'Electrolux oven and range repair: F10, F30 and F90 codes',
+        paragraphs: [
+          'Electrolux ranges and wall ovens report faults with an F code, and Electrolux publishes the first step for several of them: reset the unit by unplugging it for 30 seconds, or by switching off its breaker.',
+        ],
+        bullets: [
+          'F10, thermal runaway: the oven is detecting higher than normal temperatures, a built-in safety alert. Turn the oven off and let it cool before using it again. On ovens with the stone-baked pizza feature, Electrolux says F10 can come from the Pizza Shield sitting on the wrong rack; it belongs in rack position 7. If F10 keeps coming back, the oven needs a diagnosis.',
+          'F30 and F31: an open or a shorted probe. Reset the power first; a code that returns after the reset needs a diagnosis.',
+          'F90 to F94: a door lock issue. Press the UNLOCK key, then reset the power for up to 30 seconds. A door that stays locked after the reset needs a technician.',
+          'A dash on the cooktop display is not a fault: the cooktop is locked. Press OFF and hold it for 6 seconds to cancel the lock.',
+        ],
+      },
+      {
+        id: 'gas-range',
+        heading: 'Electrolux gas ranges and cooktops at Denver elevation',
+        paragraphs: [
+          'Electrolux installation instructions for its gas ranges, dual fuel ranges and gas cooktops carry the same note: for operation above 2,000 feet, the appliance rating is reduced by 4 percent for each 1,000 feet above sea level. Denver sits at about 5,280 feet, so that note applies to every Electrolux gas appliance in the metro. The gas cooktop guide states that installation and service must be performed by a qualified installer, and the free-standing gas range guide says the range can be converted from natural gas to LP only with the proper conversion kit.',
+          'For a gas range or stove that lights poorly, burns unevenly or will not hold a flame, we check the gas type, any conversion and the installation against the Electrolux guide for your model before quoting parts.',
+        ],
+      },
+      {
+        id: 'washer',
+        heading: 'Electrolux washer repair: E11, E21, E41 and SU dS',
+        paragraphs: [
+          'Electrolux front-load washers show a code when a cycle stops, and Electrolux publishes the owner checks for each one. For odor, the washer manual recommends the Clean Washer cycle once a month and drying the fold of the door gasket after each wash.',
+        ],
+        bullets: [
+          'E11, long fill time: the washer is not filling during the wash. The door can stay locked for up to 6 minutes; unplugging restarts that lock timer, so wait it out. Then check that the hot and cold supply lines are not reversed and that the water supply meets the requirements in your Use and Care Guide.',
+          'E21, long pump out time: the water is draining too slowly. Electrolux says the most common cause is a kinked drain hose. Check the hose for restrictions, confirm it is installed properly and that the hot and cold lines are not reversed.',
+          'E41, door open: the control board reads the door switch as open. Close the door until you hear it click, remove any clothing caught in the door, and make sure the latch and the striker work.',
+          'SU dS, too many suds: use HE detergent and less of it, then run an empty Quick Wash. Each extra rinse the washer adds to clear suds adds about 5 minutes to the cycle.',
+        ],
+      },
+      {
+        id: 'dryer',
+        heading: 'Electrolux dryer repair: EF1, E4 and long drying times',
+        paragraphs: [
+          'EF1 is a ventilation blockage. Electrolux says to check the lint filter, the exhaust tube for bends, restrictions and blocks, and the vent exit outside, and to clear any debris. E4 means the humidity sensor has failed: the dryer finishes the current cycle and manual cycles still run, but an automatic cycle that cannot sense dryness is a repair.',
+          'For a dryer that takes too long, Electrolux says to clean the lint screen after every load, check that Air Fluff is not selected, since it tumbles without heat, and clean the moisture sensor bars, which fabric softener sheets can coat. If the dryer runs but stays cold on a clean vent, it needs a diagnosis.',
+        ],
+      },
+      {
+        id: 'dishwasher',
+        heading: 'Electrolux dishwasher repair: the i20 drain code',
+        paragraphs: [
+          'Error code i20 means the dishwasher is not draining properly. Electrolux lists the checks: the knockout plug in the disposer must have been removed when the dishwasher was installed; the drain hose must not be blocked, pinched or restricted and must reach at least 32 inches from the floor; and the glass trap and filter must be clear of food soils. An i20 that returns after all of that needs a diagnosis, and you get a price before any repair.',
+        ],
+      },
+      {
+        id: 'refrigerator',
+        heading: 'Electrolux refrigerator not cooling',
+        paragraphs: [
+          'Electrolux suggests 37°F for the refrigerator and 0°F for the freezer, and says a unit needs 24 hours to stabilize after installation or a settings change. Before booking a refrigerator or fridge repair, check the published basics:',
+        ],
+        bullets: [
+          'Power: the control panel or interior lights are on, and if the unit is on a GFI outlet, the outlet has not tripped. Electrolux calls for a dedicated, grounded 115 or 120 volt circuit.',
+          'Airflow: food or containers blocking the vents inside stop the unit from cooling properly.',
+          'Door seal: a door that does not seal causes unstable temperatures. Close the door on a dollar bill; you should feel resistance when you pull it out. Clean the gasket with warm soapy water.',
+          'Location: Electrolux does not recommend installing the unit where the temperature drops below 55°F, which matters for a garage refrigerator in a Denver winter.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Electrolux warranty and authorized service',
+        paragraphs: [
+          'Coverage depends on the product, so the warranty page of your own guide is what counts. The current Electrolux front-load washer manual, for example, gives one year of parts and labor from the original purchase date, plus a second year of parts only. The inner wash tub is covered for the functional life of the product and the wash tub drive motor for ten years, both excluding labor.',
+          'For warranty service, call Electrolux at 1-877-435-3287 and keep your receipt to establish the purchase date. Electrolux also excludes damage caused by unauthorized service companies or by parts that are not genuine Electrolux parts, which is one more reason a repair still under warranty should go through them. On a unit installed less than 30 days ago, Electrolux support says to contact your installer first.',
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: find the Electrolux model and serial number',
+        paragraphs: [
+          'Electrolux parts are specific to the model and series. On a front-load washer the tag is along the trim of the door; on a dryer, along the top of the door opening. Dishwashers carry it on the inside of the door or the right side of the tub, and French door and side-by-side refrigerators on the upper right side of the fresh food compartment. Ranges and wall ovens usually have it on the oven\'s interior side trim. Send a photo of the tag with the code on the display.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Electrolux repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Electrolux appliances in Denver, Aurora, Lakewood, Arvada, Westminster, Thornton, Broomfield, Golden, Englewood, Littleton, Centennial, Greenwood Village, Lone Tree, Highlands Ranch, Parker and Castle Rock. Same-day appointments depend on where you are and what failed; call with the model number and the code on the display and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you an authorized Electrolux service center?',
+        a: 'No. H-Prime is an independent appliance repair company. Electrolux warranty service is arranged through Electrolux at 1-877-435-3287 and performed by Electrolux or an authorized service company. We repair Electrolux appliances that are out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Electrolux appliance repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because they depend on the model and the part: a dryer vent problem and an oven control board are very different jobs.`,
+      },
+      {
+        q: 'What does F10 mean on my Electrolux oven?',
+        a: 'Electrolux describes F10 as thermal runaway: the oven detects higher than normal temperatures. Turn it off, let it cool and reset the power for 30 seconds. On pizza oven models, check that the Pizza Shield is in rack position 7. If F10 returns, book a diagnosis.',
+      },
+      {
+        q: 'My Electrolux washer shows E21. What should I check?',
+        a: 'E21 means the washer takes too long to pump out. Electrolux says the most common cause is a kinked drain hose. Check the hose for restrictions and that it is installed properly; if E21 keeps coming back, the washer needs a technician.',
+      },
+      {
+        q: 'Why is my Electrolux dryer showing EF1?',
+        a: 'EF1 is a ventilation blockage. Clean the lint filter, check the exhaust tube for bends or restrictions and clear the vent exit outside. If the code returns on a clear vent, book a visit.',
+      },
+      {
+        q: 'Does my Electrolux gas range need adjusting for Denver altitude?',
+        a: 'Electrolux installation instructions state that above 2,000 feet the appliance rating is reduced by 4 percent for each 1,000 feet above sea level, and that installation and service must be done by a qualified installer. Denver is at about 5,280 feet, so the note applies here.',
+      },
+      {
+        q: 'Which Electrolux appliances do you repair?',
+        a: 'Gas, electric and induction ranges, wall ovens, cooktops, microwaves, front-load washers, gas and electric dryers, dishwashers, refrigerators and freezers.',
+      },
+    ],
+  },
+
+  'fisher-paykel': {
+    slug: 'fisher-paykel',
+    name: 'Fisher & Paykel',
+    title: 'Fisher & Paykel Repair Denver | Washer, Dryer, Dishwasher',
+    description:
+      `Independent Fisher & Paykel repair in Denver Metro: washers, dryers, DishDrawer dishwashers, refrigerators, ranges. ${SERVICE_CALL_FEE} service call, price before work.`,
+    h1: 'Fisher & Paykel Appliance Repair in Denver',
+    subtitle: `Washers and dryers, DishDrawer dishwashers, refrigerators, ranges and cooktops • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'Fisher & Paykel started in New Zealand in 1934 and has been part of Haier Group since 2012. Its US lineup includes the DishDrawer dishwasher, front load washers with a direct drive motor, ActiveSmart refrigerators, and gas ranges and cooktops, and each reports its own codes and has its own owner checks. H-Prime repairs Fisher & Paykel appliances across the Denver Metro area, from Cherry Hills Village and Highlands Ranch to Golden, Arvada and Broomfield.',
+      `We are an independent repair company, not a Fisher & Paykel Authorized Service Agent. If your appliance is inside its Fisher & Paykel warranty, that repair belongs to their network and should cost you nothing. Once it is out of warranty, the service call is ${SERVICE_CALL_FEE}, you get a diagnosis first and a written price before any work starts.`,
+    ],
+    sections: [
+      {
+        id: 'washer',
+        heading: 'Fisher & Paykel washer repair: codes, drain and spin problems',
+        paragraphs: [
+          'A Fisher & Paykel front load washer that finds a problem beeps continuously and shows a code. Some codes are user warnings you clear yourself. For a fault number, Fisher & Paykel gives a reset routine: turn the washer off at the power point, wait one minute and turn it back on, check that it is level, remove the load and run a Rinse cycle. If the fault returns after a second power reset, it needs a technician.',
+          'Other common causes, from the Fisher & Paykel guide for its 24-inch WH2424 models:',
+        ],
+        bullets: [
+          'Not draining: a blocked pump filter or drain hose. The pump filter sits behind a cover at the bottom right of the front, and Fisher & Paykel recommends cleaning it about once a month.',
+          'Not spinning properly or vibrating: an unbalanced load, a washer that is not level, too many suds, or transit bolts left in after installation.',
+          'Door will not open: the drum is over 140°F, the water level is above the bottom of the door seal, or the drum is still moving.',
+          'Water under the machine: check the hoses, the detergent drawer and the door seal; a damaged seal has to be replaced.',
+        ],
+      },
+      {
+        id: 'dryer',
+        heading: 'Fisher & Paykel dryer repair: no heat, long cycles, fault codes',
+        paragraphs: [
+          'For a fault number, the US AeroCare dryer guide says to unplug the dryer for one minute, check that it is level, remove the load and run a 20-minute Time Dry. If the fault returns, record the code and serial number before calling.',
+          'No heat: check that it is not set to Air Dry, that the gas is on for gas models, and that it has not already moved into cooling. Long drying times: the lint filter, an overloaded drum, or an exhaust duct that is crushed, too long or blocked. Fisher & Paykel calls for 4-inch metal duct only, never plastic.',
+          'One Denver detail: the same guide states that high altitude can make the drying cycle longer, and that gas dryer input ratings should be reduced by four percent per 1,000 feet for operation above 2,000 feet. A gas dryer that was never adjusted is worth checking before blaming a part.',
+        ],
+      },
+      {
+        id: 'dishdrawer',
+        heading: 'DishDrawer dishwasher repair: what the F and A codes mean',
+        paragraphs: [
+          'A DishDrawer beeps and flashes a code when it detects a fault; on double models each drawer reports separately and the other keeps working. A codes come with owner steps. For an F code, first reset: press power to stop the beeping, again to turn it off, wait a few seconds and turn it back on.',
+        ],
+        bullets: [
+          'A1: turn the water supply on. A3, cannot drain: check the drain hose for a blockage or kink.',
+          'A6: the spray arm is loose or water pressure is low; refit the arm so it turns freely. A7: excess foam; let the auto recovery finish and check the detergent.',
+          'F1, flood detected or excess foaming: if no water is visible, Fisher & Paykel says to turn the power off overnight, then run a cycle without detergent and reduce detergent to one teaspoon at most. If there is water on the floor, turn off power and water and book service.',
+          'F2, motor rotor fault: with the power off, remove any debris around the rotor. If it continues, it needs service.',
+          'F3 is a water temperature fault, F4 a heating element failure, F5 a lid motor fault, F6 a drying fan fault, F7 a fill valve fault, F8 and F9 electronics faults and FC a communication fault between drawers. Fisher & Paykel states these require a service technician.',
+        ],
+      },
+      {
+        id: 'refrigerator',
+        heading: 'Fisher & Paykel refrigerator repair: warm, freezing or alarming',
+        paragraphs: [
+          'On ActiveSmart French door models, Fisher & Paykel sets the factory default at 3°C in the refrigerator and -18°C in the freezer, about 37°F and 0°F, and says reaching them takes 2-3 hours after first switch-on. A warm compartment is first checked against the setting, door openings and a large load of food added at once. Doors that do not seal also make the motor run long; Fisher & Paykel recommends cleaning the door gasket every three months.',
+          'Food freezing in the refrigerator is often the setting or food right in front of the air outlets. If the ice maker stops, check that it is on, the water is connected, the line is not kinked and the filter is not clogged. A fault alarm when the door opens is different: record the number of beeps and the pattern of the temperature lights for the diagnosis.',
+        ],
+      },
+      {
+        id: 'range',
+        heading: 'Fisher & Paykel range, oven and cooktop repair',
+        paragraphs: [
+          'From the Fisher & Paykel professional range guide: an ignitor that keeps clicking after the burner lights is dirty or wet; with the burner off, clean it with a small brush or a cotton swab dipped in rubbing alcohol. A flame that does not go all around the cap means wet, dirty or misaligned burner parts. Uneven, very large, yellow or sooty flames mean the gas type or adjustment is wrong: Fisher & Paykel says not to use the burners and to call for service.',
+          'On the oven, the door stays locked after self-clean until the oven cools, up to 45 minutes after a cancelled cycle. Alert codes A2 and A3 are door lock errors at the start and end of a clean cycle; try power off at the wall and on again first. A convection fan that does not come on is listed as a technical fault.',
+          'Altitude matters for some cooktops: the installation guide for gas cooktops CG244D, CG305D and CG365D requires a high-altitude kit above 3,000 feet, one for 3,000-6,000 feet and another above 6,000 feet. Denver, at about 5,280 feet, falls in the first band; Castle Rock, at about 6,224 feet, in the second. The range installation guides we checked list no such kit, so it depends on your model.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Fisher & Paykel warranty and who does the repair',
+        paragraphs: [
+          'In the US, Fisher & Paykel gives a two-year limited warranty on parts and labor, counted from the date the first consumer bought the product. Refrigerators get an extra three years on the sealed system (compressor, evaporator, condenser, filter dryer, tubing), five in total. FabricSmart and WashSmart washers get an extra eight years of parts-only coverage on the direct drive motor, excluding the motor controller and labor.',
+          'Warranty service is provided by Fisher & Paykel or its Authorized Service Agent. H-Prime is not one and does not do warranty repairs, so inside the warranty call Fisher & Paykel Customer Care at 888-936-7872 first. The same applies to a washer past year two with a failed direct drive motor: the part may still be covered, so call them before you call anyone.',
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: find the Fisher & Paykel serial number',
+        paragraphs: [
+          'Fisher & Paykel parts are specific to the model and serial number. On WH2424 washers it is on the rear of the machine and above the drum opening with the door open. On AeroCare dryers it is on the drum opening surround. On RF172 French door refrigerators the serial plate is at the front bottom right with the door open. On OR36S freestanding ranges the data plate is below the bottom drawer. Send a photo of the plate, the code on the display and the symptom in one sentence.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Fisher & Paykel repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Fisher & Paykel washers, dryers, DishDrawer dishwashers, refrigerators, ranges and cooktops in Denver, Cherry Creek, Cherry Hills Village, Greenwood Village, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Castle Pines, Castle Rock, Parker, Aurora, Lakewood, Golden, Arvada, Westminster and Broomfield. Call with the model number and the code and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you an authorized Fisher & Paykel service agent?',
+        a: 'No. H-Prime is an independent appliance repair company. Warranty repairs go through Fisher & Paykel or its Authorized Service Agent, which Fisher & Paykel Customer Care at 888-936-7872 arranges. We repair Fisher & Paykel appliances that are out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Fisher & Paykel repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because they depend on the model and the part: a pump filter blockage and a DishDrawer lid motor are very different jobs.`,
+      },
+      {
+        q: 'What does F1 mean on a Fisher & Paykel DishDrawer?',
+        a: 'Flood detected or excess foaming. If no water is visible, turn the power off overnight, run a cycle without detergent and use no more than one teaspoon of detergent afterward. If water is on the floor, turn off power and water and book service.',
+      },
+      {
+        q: 'Why is my Fisher & Paykel washer not draining?',
+        a: 'Fisher & Paykel lists a blocked pump filter or drain hose, or a drain hose set higher than about 47 inches. The pump filter is behind the cover at the bottom right of the front. If it is clear and the washer still holds water or shows a fault number, book a visit.',
+      },
+      {
+        q: 'Why does my Fisher & Paykel dryer take so long in Denver?',
+        a: 'Check the lint filter, load size and exhaust duct first. Fisher & Paykel also notes that high altitude can lengthen drying cycles and that gas dryers above 2,000 feet need their input rating reduced.',
+      },
+      {
+        q: 'What does the Fisher & Paykel warranty cover?',
+        a: 'Two years of parts and labor from the date of first purchase, performed by Fisher & Paykel or its Authorized Service Agent. Refrigerator sealed systems are covered for five years, and washer direct drive motors get eight more years of parts-only coverage after the first two.',
+      },
+      {
+        q: 'Which Fisher & Paykel appliances do you repair?',
+        a: 'Front load washers, electric and gas dryers, single and double DishDrawer dishwashers, French door and bottom freezer refrigerators, gas and dual fuel ranges, wall ovens and gas cooktops.',
+      },
+    ],
+  },
+
+  hotpoint: {
+    slug: 'hotpoint',
+    name: 'Hotpoint',
+    title: 'Hotpoint Appliance Repair Denver | Fridge, Dishwasher, Oven',
+    description:
+      `Independent repair for US Hotpoint appliances across the Denver Metro area: refrigerators, dishwashers, washers, dryers, ranges. ${SERVICE_CALL_FEE} service call, price first.`,
+    h1: 'Hotpoint Appliance Repair in Denver',
+    subtitle: `Refrigerators, dishwashers, washers and dryers, ranges and ovens • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'In the United States, Hotpoint is a brand of GE Appliances, a Haier company. Hotpoint dates its appliance line to 1918, when the founders of the Hotpoint iron and an early electric range merged their companies with General Electric, and GE sold its appliance business to Haier in 2016. Today hotpoint.com sells refrigerators and freezers, ranges, dishwashers, washers and dryers, and the owner manuals for those models are GE Appliances manuals, often shared with GE models of the same type. H-Prime repairs Hotpoint refrigerators, dishwashers, washers, dryers and ranges across the Denver Metro area, from Aurora and Thornton to Lakewood and Littleton.',
+      `One thing to clear up first, because many Hotpoint searches come from people used to the British brand: Hotpoint in Europe and the UK is owned by Whirlpool Corporation, a separate company, and Hotpoint USA says so on its own support page. This page is about US Hotpoint appliances. H-Prime is an independent repair company, not Bodewell and not GE Appliances factory service. The service call is ${SERVICE_CALL_FEE}, and you get a diagnosis and a written price before any repair starts.`,
+    ],
+    sections: [
+      {
+        id: 'refrigerator',
+        heading: 'Hotpoint refrigerator and fridge repair: warm, frosty, no ice',
+        paragraphs: [
+          'The owner manual for Hotpoint top-freezer refrigerators with a single temperature dial covers a few behaviors that look like faults but are not. The dial ships on the recommended factory setting, Colder. A new or newly moved refrigerator needs at least 24 hours to pull down and stabilize, and one with an ice maker can take 12-24 hours before it makes the first ice. The ice maker only works once the water line is connected, the water is turned on and the ice maker itself is switched on, and the manual says to throw away the first batches so the water line clears.',
+          'Frost on the freezer walls is the other common call. The manual explains it the same way every time: frost inside the freezer typically means the door is not sealing or was left open. Clear it with a plastic spatula, check that no package is holding the door open, keep the air vents clear and cover food before it goes in. Clean the door gaskets with warm soapy water as well.',
+          'When the dial is right, the door seals and the refrigerator still runs warm days after setup, or the freezer keeps frosting with a good gasket, the cause is mechanical: a fan, the defrost system, a control or the sealed system. That needs a diagnosis on site before anyone quotes a part.',
+        ],
+      },
+      {
+        id: 'dishwasher',
+        heading: 'Hotpoint dishwasher repair: not draining, not cleaning, flashing Start light',
+        paragraphs: [
+          'Hotpoint dishwashers share their owner manual with GE dishwasher series, and that manual is specific about what to try before calling. A Start light that flashes once usually means the door was opened or the cycle interrupted: press Start once and close the door within 4 seconds. A Start light flashing in a sequence is different. The manual calls it a critical fault and says to call for service.',
+        ],
+        bullets: [
+          'Water standing in the tub or not pumping out: clean the air gap if you have one, run the garbage disposer if the dishwasher drains into it, and check whether the kitchen sink drains well. If the sink is slow too, the manual says you may need a plumber, not an appliance technician.',
+          'Dishes not clean: the filters come first. The manual says to inspect and clean them every other month, more often with heavy use, and sooner if dishes feel gritty. Then check that the water entering the dishwasher is hot by running the nearest hot faucet before starting a cycle.',
+          'Spots and white film: the manual points at hard water minerals and recommends a rinse aid, a citric acid cleaning cycle, or a cup of vinegar added just after the detergent cup opens.',
+          'Dishwasher will not run at all: check the breaker or fuse, the wall switch that sometimes powers the dishwasher next to the disposer switch, and the control lock.',
+        ],
+      },
+      {
+        id: 'laundry',
+        heading: 'Hotpoint washing machine and dryer repair',
+        paragraphs: [
+          'Whether you call it a washer or a washing machine, the Hotpoint owner manual lists the checks for a load that will not drain: straighten the drain hose, make sure the washer is not sitting on it, and keep the top of the drain outlet less than 8 feet above the floor. A blinking Spin light means the washer detected an out-of-balance load; even out the clothes and run a Drain and Spin cycle. A Lid Locked light flashes after 3 cycles are started without opening the lid, and the washer will not start another until you open and close it. If the washer will not operate at all, the manual says to unplug it, wait 2 minutes, plug it back in and press Start.',
+          'For a Hotpoint dryer that takes too long, the manual starts with the vent: the duct must be clean, free of kinks and unobstructed, and the outside wall damper should open easily. Clean the lint filter before every load. For a dryer that tumbles but does not heat, check the breaker panel: some electric dryers use two fuses or breakers, and the dryer can tumble with only one tripped. On gas models, make sure the gas shutoff at the dryer and the main shutoff are fully open.',
+          'If the washer still will not drain or spin on a straight hose and a balanced load, or the dryer stays cold with both breakers on and the vent clear, the fault is a part: a pump, a lid lock, a heating element, a fuse or a gas valve. That is a repair we diagnose and quote.',
+        ],
+      },
+      {
+        id: 'oven',
+        heading: 'Hotpoint oven, range and stove repair',
+        paragraphs: [
+          'On Hotpoint gas ranges the clicking you hear when a burner lights is the electric spark igniter, and the manual says all burners spark when one knob is at LITE. If a burner does not light, check that the range is plugged in, the gas is on and the breaker is not tripped, then that the burner parts sit correctly. Clogged burner slots or residue on the electrode stop ignition, and the manual says to polish the flat tip of the electrode lightly until it shines. Very large or yellow flames point to the air and gas ratio, and on propane the manual says to contact whoever installed or converted the range. If the surface burners light but the oven does not, the oven gas shutoff on the regulator may be closed. During a power failure the oven will not work, but surface burners can be lit with a match.',
+          'Electric and gas Hotpoint ovens with a display show a function error code as F followed by a number or letter. The manual says to press Cancel/Off, let the oven cool for one hour and try again. If the code returns, disconnect all power to the oven briefly, reconnect it, and call for service if it repeats again. An oven door that stays locked after self-clean will open once the oven cools below the locking temperature. LOC ON in the display means the controls are locked, not broken.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Hotpoint warranty and customer service: who to call first',
+        paragraphs: [
+          'The owner manuals for Hotpoint refrigerators, dishwashers, washers, dryers and ranges list a one-year limited warranty from the date of original purchase, covering any part that fails from a defect in materials or workmanship plus the labor to replace it. The warrantor is GE Appliances. Hotpoint states that its appliances are serviced by Bodewell, the GE Appliances service brand formerly known as GE Factory Service, at 833-426-3393 or bodewell.com. General questions go to the GE Appliances Answer Center at 1-800-626-2005. If your Hotpoint is inside that first year, call them: a covered repair should not cost you anything.',
+          `Once the warranty has ended, you can choose who repairs it. That is where an independent company makes sense: the service call is ${SERVICE_CALL_FEE}, and you see the price for the repair before you agree to it.`,
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: where the Hotpoint model and serial numbers are',
+        paragraphs: [
+          'Hotpoint manuals tell you where the rating label is. On top-freezer refrigerators it is on the left side, near the middle of the refrigerator compartment. On dishwashers it is on the tub wall just inside the door. On washers it is under the lid, on dryers on the front behind the door, and on ranges on the front behind the range drawer. Send us a photo of the label, the symptom in one sentence and any code or flashing light, and we can check parts before the visit.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Hotpoint appliance repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Hotpoint appliances in Denver, Aurora, Lakewood, Arvada, Westminster, Thornton, Northglenn, Commerce City, Englewood, Littleton, Centennial, Highlands Ranch, Parker, Castle Rock, Golden and Broomfield. Same-day appointments depend on where you are and what failed; call with the model number and the symptom and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is US Hotpoint the same company as Hotpoint in the UK?',
+        a: 'No. In the Americas the Hotpoint brand is owned by GE Appliances, a Haier company. In Europe it is owned by Whirlpool Corporation, a separate company. We repair US Hotpoint appliances sold in the Denver area.',
+      },
+      {
+        q: 'Are you Hotpoint service or a Hotpoint engineer?',
+        a: 'No. H-Prime is an independent appliance repair company. Hotpoint appliances are factory serviced by Bodewell, formerly GE Factory Service, at 833-426-3393. We repair Hotpoint appliances out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Hotpoint repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because a dishwasher drain pump and a refrigerator sealed system repair are very different jobs.`,
+      },
+      {
+        q: 'What is the Hotpoint customer service number?',
+        a: 'Hotpoint USA lists the GE Appliances Answer Center at 1-800-626-2005 for questions and Bodewell at 833-426-3393 to schedule factory service. For an appliance bought in Europe, Hotpoint USA directs you to Hotpoint or Whirlpool support there.',
+      },
+      {
+        q: 'Why is my Hotpoint dishwasher Start light flashing?',
+        a: 'A single flashing Start light usually means the door was opened or the cycle was interrupted: press Start and close the door within 4 seconds. If the light flashes in a sequence, the manual calls it a critical fault and says to call for service.',
+      },
+      {
+        q: 'My Hotpoint refrigerator is warm or the freezer is frosting up. What should I check?',
+        a: 'Give a new or moved refrigerator at least 24 hours to stabilize and make sure the dial is set near Colder. Frost in the freezer usually means the door is not sealing or was left open. If it stays warm with a good seal, book a diagnosis.',
+      },
+      {
+        q: 'Is my Hotpoint still under warranty?',
+        a: 'The owner manuals for Hotpoint refrigerators, dishwashers, washers, dryers and ranges list a one-year limited warranty on parts and labor from the date of original purchase. Inside that year, call GE Appliances or Bodewell first; after it ends, we can repair it.',
+      },
+    ],
+  },
 };
 
 export function getBrandContent(slug: string): BrandContent | undefined {

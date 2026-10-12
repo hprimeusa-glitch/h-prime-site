@@ -17,6 +17,9 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   '/brands/bosch-repair': '2026-09-21',
   '/brands/wolf-repair': '2026-09-28',
   '/brands/sub-zero-repair': '2026-09-28',
+  '/brands/electrolux-repair': '2026-10-12',
+  '/brands/fisher-paykel-repair': '2026-10-12',
+  '/brands/hotpoint-repair': '2026-10-12',
 };
 
 /** Date for one pathname: the page's own rewrite date if it is newer than the template. */
