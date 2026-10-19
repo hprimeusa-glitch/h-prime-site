@@ -20,6 +20,9 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   '/brands/electrolux-repair': '2026-10-12',
   '/brands/fisher-paykel-repair': '2026-10-12',
   '/brands/hotpoint-repair': '2026-10-12',
+  '/brands/frigidaire-repair': '2026-10-19',
+  '/brands/jennair-repair': '2026-10-19',
+  '/brands/samsung-repair': '2026-10-19',
 };
 
 /** Date for one pathname: the page's own rewrite date if it is newer than the template. */

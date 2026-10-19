@@ -1065,6 +1065,413 @@ export const brandContent: Record<string, BrandContent> = {
       },
     ],
   },
+
+  frigidaire: {
+    slug: 'frigidaire',
+    name: 'Frigidaire',
+    title: 'Frigidaire Repair Denver | Dishwasher, Oven, Refrigerator',
+    description:
+      `Independent Frigidaire repair in Denver Metro: dishwashers with i10 / i30 / i50 codes, ovens and ranges, refrigerators, washers, dryers. ${SERVICE_CALL_FEE} service call.`,
+    h1: 'Frigidaire Appliance Repair in Denver',
+    subtitle: `Dishwashers, ovens and ranges, refrigerators, washers and dryers, microwaves • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'Frigidaire is part of the Electrolux Group, and in the United States its appliances are warranted by Electrolux Major Appliances North America, the same Charlotte, North Carolina division that stands behind Electrolux-branded appliances. The owner guides and support articles are Frigidaire\'s own, though, and so are many of the codes: a Frigidaire dishwasher, range or top-load washer does not always report a fault the way its Electrolux cousin does. H-Prime repairs all of them across the Denver Metro area.',
+      `We are an independent appliance repair company, not Frigidaire factory service and not a Frigidaire authorized servicer. Out of warranty, the service call is ${SERVICE_CALL_FEE}: you get a diagnosis first and a written price before any repair starts.`,
+    ],
+    sections: [
+      {
+        id: 'dishwasher',
+        heading: 'Frigidaire dishwasher repair: what the i codes mean',
+        paragraphs: [
+          'A Frigidaire dishwasher that stops mid-cycle usually shows a code starting with i (some 2023 models show the same codes starting with E, such as E10 or E30). The use and care guide pairs each code with a first check. To clear a code, press Cancel or switch the breaker off for 5 minutes; if the code comes back after that reset, Frigidaire says to call service.',
+        ],
+        bullets: [
+          'i10, low fill: the dishwasher did not get enough water. Look for a pinched water supply line or a shutoff valve that is not fully open.',
+          'i20, i40 or iF0, not draining: clogged filters or a restricted drain line. Clean both filters and the sump area, check the drain hose for kinks and, if the dishwasher drains into a disposer, make sure the knockout plug was removed at installation. Frigidaire wants the drain hose at least 32 inches from the floor.',
+          'i30, leak in the bottom pan: check for loose connections at the water inlet valve and that the dishwasher is level.',
+          'i50 is a drain or wash motor problem, i60 a water heating problem and iC0 an electronic control problem. If the 5 minute power reset does not clear them, they need a technician.',
+          'Not an error: PF means the power was interrupted (press Start or Cancel), CL or Cd means the door is not closed and latched, and Hd or HO is a heat delay while the water warms, roughly 1 to 2 minutes for each degree.',
+        ],
+      },
+      {
+        id: 'dishwasher-cleaning',
+        heading: 'Frigidaire dishwasher not cleaning or leaving film',
+        paragraphs: [
+          'Frigidaire\'s own checklist for poor cleaning starts with the cycle: Rinse does not clean dishes at all, and Quick Wash or 30 Minute may not handle heavy soil. Detergent left in the dispenser after a cycle means something blocked the door of the cup. Then clean the filter, the glass trap and the spray arms; the quick start guide says to clean the glass trap once a month. For a cloudy film from hard water minerals, the manual suggests running a Normal cycle and adding 2 cups of white vinegar to the bottom of the tub at the second fill.',
+          'If the filters are clean, the spray arms turn and the dishes still come out dirty, or the dishwasher drains and flashes its status lights again after a 5 minute power off, which Frigidaire links to a shorted keypad, the problem is a part: a pump, a heater, a sensor or a control. That is what we diagnose and quote.',
+        ],
+      },
+      {
+        id: 'oven',
+        heading: 'Frigidaire oven and range repair: F codes and self-clean',
+        paragraphs: [
+          'Frigidaire\'s range error code guide lists the codes an electric range can show. The first step for most of them is the same: cut the power for up to 30 seconds, by unplugging the range or switching its breaker off and back on.',
+        ],
+        bullets: [
+          'F1 is a shorted keypad, and F3, F20 or F26 a communication error between control boards.',
+          'F10 means the oven sensed a higher than normal temperature. Let it cool before using it again; on ovens with Stone-Baked Pizza, check that the Pizza Shield is in the rack position the manual gives, which is position 7 on most models.',
+          'F30 and F31 are an open and a shorted temperature probe; F40 and F41 a cooktop lock out; F90 to F94 a door lock problem.',
+          'Self-clean takes 2 to 4 hours, and the door stays locked until the oven cools, about one more hour. The electric range manual says not to force the door and to give the motorized latch about 15 seconds.',
+          'An oven that does not get hot enough can be low supply voltage or a torn door gasket, according to Frigidaire. A code that comes back after the power reset needs a diagnosis.',
+        ],
+      },
+      {
+        id: 'gas-range',
+        heading: 'Frigidaire gas range: burners and Denver altitude',
+        paragraphs: [
+          'When a Frigidaire gas burner will not ignite, the gas range manual lists the checks: the knob turned fully to LITE, clean burner ports (cleaned with a small-gauge wire once cool), caps seated correctly, the range plugged in and the breaker on. All igniters spark at once by design; only the selected burner should light. During a power outage the burners can be lit with a match. An orange flame usually means dust in the line, and a high or orange flame on propane can mean the LP conversion was done incorrectly.',
+          'For Denver, the installation instructions for Frigidaire freestanding gas ranges matter: above 2,000 feet the appliance rating is reduced by 4 percent for every 1,000 feet above sea level. At about 5,280 feet, that applies to every gas range in the metro. The ranges ship for natural gas, LP requires the conversion kit, and Frigidaire states that installation and service must be done by a qualified installer.',
+        ],
+      },
+      {
+        id: 'refrigerator',
+        heading: 'Frigidaire refrigerator repair, Gallery and Professional included: not cooling, no ice, display codes',
+        paragraphs: [
+          'Frigidaire ships its refrigerators set to 37°F in the fresh food section and 0°F in the freezer and calls 33 to 47°F and -6 to 6°F acceptable. A new unit takes about 24 hours to stabilize, and Frigidaire says not to adjust the controls during that first day. Before booking a refrigerator repair, check what Frigidaire checks: a dedicated grounded outlet on a 15 or 20 amp breaker, a GFI outlet that has not tripped, vents not blocked by food, and a door gasket that grips a dollar bill. If the unit has run for 24 hours with no cooling, Frigidaire says to schedule service.',
+          'For a garage refrigerator, the owner guide says not to install it where the temperature drops below 55°F or rises above 110°F, because the compressor cannot hold temperatures there. That covers many Denver garages in winter.',
+        ],
+        bullets: [
+          'No ice: allow 24 hours for the first ice, then check that the dispenser display is not locked (hold for 3 seconds), the water supply is on, the filter is installed and not frozen, and the bin has no ice jam. Frigidaire recommends changing the filter every 6 months.',
+          'DISP or DI SP on the display is an ice jam; HI or H means the compartment has been too warm for over an hour; PF is a power failure; 77 77 is demo mode, cleared by unplugging the unit for 5 minutes.',
+          'SB is Sabbath mode, not a fault. Door Ajar shows after a door has been open more than 5 minutes.',
+        ],
+      },
+      {
+        id: 'laundry',
+        heading: 'Frigidaire washing machine and dryer repair',
+        paragraphs: [
+          'Frigidaire top-load washers report fill and drain problems with short codes. E1 is a slow fill: check that the lid is closed, both faucets are fully open, the hoses are not kinked and the inlet screens are not clogged. E2 is a slow drain: check the breaker, the standpipe height and the drain hose, and remember the washer will not spin with the lid open. E5 means the washer is not level. On front-load washers, F2 means too many suds: switch to HE detergent and run an empty Quick Wash. The installation guide allows a standpipe from 39 to 96 inches high and at least 1 1/4 inches across.',
+          'For a Frigidaire dryer that takes too long, the owner checklist starts with the lint screen after every load and a duct of at least 4 inches in rigid or semi-rigid metal with no more than four 90 degree bends. Air Fluff tumbles with no heat, the moisture sensor bars can be wiped with rubbing alcohol, and on a 208 volt supply drying takes about 20 percent longer than on 240 volts. An electric dryer with one of its two house fuses or breakers tripped tumbles without heat. A dryer that stays cold with good power and a clear vent, or shows a sensor or control error, needs service.',
+        ],
+      },
+      {
+        id: 'microwave',
+        heading: 'Frigidaire microwave repair',
+        paragraphs: [
+          'Frigidaire recommends a dedicated circuit for a microwave, not a GFI outlet and not shared with other appliances; a breaker that trips after a surge is the first thing to check when the display is dark. The microwave manual also gives a simple test before a service call: heat 1 cup of water on HIGH for 1 minute and check that the light, the fan and the turntable work and that the water is warm. If any of them fail, check the outlet and the breaker; if those are fine, the microwave needs a technician. Frigidaire is explicit that owners should not try to repair a microwave themselves.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Frigidaire warranty and factory service',
+        paragraphs: [
+          'Most Frigidaire appliances have a one-year limited warranty. For that first year, Electrolux pays to repair or replace any part that fails from a defect in materials or workmanship. The manuals we checked list no extra sealed-system or component years. Warranty service must be obtained by contacting Frigidaire, at 1-800-374-4432, and performed by Electrolux or an authorized service company. Frigidaire also excludes damage caused by unauthorized service companies or by parts that are not genuine. For an appliance installed in the last 30 days, Frigidaire says to go back to your installer first.',
+          `Once the warranty has ended, you choose who repairs it. With an independent company the service call is ${SERVICE_CALL_FEE} and you see the repair price before you agree to it.`,
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: where the Frigidaire model and serial number are',
+        paragraphs: [
+          'Frigidaire publishes the tag locations. Dishwashers have it on the inside edge of the door or the right side of the tub. Ranges and wall ovens carry it on the oven\'s interior side trim, the left side panel with the door open, or the front frame of the storage drawer. Top-freezer refrigerators have it on the upper left wall of the fresh food section, French door and side-by-side models on the upper right. Front-load washers carry it on the door trim, top-load washers at the back of the tub opening under the lid, and dryers inside the door opening. Send a photo of the tag with the code on the display.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Frigidaire repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Frigidaire appliances in Denver, Aurora, Lakewood, Arvada, Westminster, Thornton, Northglenn, Broomfield, Golden, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Parker and Castle Rock. Same-day appointments depend on where you are and what failed; call with the model number and the code and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you an authorized Frigidaire repair service?',
+        a: 'No. H-Prime is an independent appliance repair company. Frigidaire warranty service is arranged through Frigidaire at 1-800-374-4432 and done by Electrolux or an authorized service company. We repair Frigidaire appliances out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Frigidaire appliance repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because a clogged dishwasher drain and a refrigerator sealed system repair are very different jobs.`,
+      },
+      {
+        q: 'What does i30 mean on my Frigidaire dishwasher?',
+        a: 'Frigidaire describes i30 as a leak or overflow detected in the bottom pan. Check for loose connections at the water inlet valve and that the dishwasher is level, then reset it. If i30 returns, book a diagnosis.',
+      },
+      {
+        q: 'Why is my Frigidaire dishwasher not draining?',
+        a: 'Codes i20, i40 or iF0 point to clogged filters or a restricted drain line. Clean both filters and the sump, check the drain hose for kinks and confirm the disposer knockout plug was removed. If it still holds water, book a visit.',
+      },
+      {
+        q: 'My Frigidaire refrigerator is not cooling. What should I check?',
+        a: 'Check the outlet and breaker, blocked vents and the door gasket, and give a new unit 24 hours to stabilize. Frigidaire does not recommend installing the refrigerator where it drops below 55°F. If it has run 24 hours with no cooling, book service.',
+      },
+      {
+        q: 'Does my Frigidaire gas range need adjusting for Denver altitude?',
+        a: 'Frigidaire installation instructions reduce the appliance rating by 4 percent for each 1,000 feet above 2,000 feet, and say installation and service must be done by a qualified installer. Denver is at about 5,280 feet, so this applies here.',
+      },
+      {
+        q: 'Which Frigidaire appliances do you repair?',
+        a: 'Dishwashers, gas and electric ranges, wall ovens, cooktops, microwaves, refrigerators and freezers, top-load and front-load washers, and gas and electric dryers, including Gallery and Professional models.',
+      },
+    ],
+  },
+
+  jennair: {
+    slug: 'jennair',
+    name: 'JennAir',
+    title: 'JennAir Appliance Repair Denver | Fridge, Dishwasher, Oven',
+    description:
+      `Independent JennAir repair in Denver Metro: built-in and column refrigerators, dishwashers with F9E1 / F8E4 codes, wall ovens, ranges, cooktops. ${SERVICE_CALL_FEE} service call.`,
+    h1: 'JennAir Appliance Repair in Denver',
+    subtitle: `Built-in refrigerators, dishwashers, wall ovens, ranges and cooktops, microwaves, coffee systems • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'JennAir is a brand of Whirlpool Corporation, the same group behind Whirlpool, KitchenAid, Maytag and Amana. JennAir dates its story to 1965, when Lou Jenn brought downdraft ventilation into the kitchen and removed the need for an overhead hood, and downdraft cooktops and ranges are still part of the line next to built-in and column refrigerators, dishwashers, wall ovens, pro-style ranges, microwave drawers and built-in coffee systems. H-Prime repairs JennAir appliances across the Denver Metro area, from Cherry Hills Village and Greenwood Village to Lone Tree, Castle Pines and Golden.',
+      `We are an independent appliance repair company, not a JennAir authorized service provider and not W Service, the service brand JennAir uses to schedule factory repairs. Out of warranty, the service call is ${SERVICE_CALL_FEE}: you get a diagnosis first and a written price before any repair starts.`,
+    ],
+    sections: [
+      {
+        id: 'refrigerator',
+        heading: 'JennAir refrigerator repair: built-in, column and French door',
+        paragraphs: [
+          'JennAir built-in refrigerators ship with the controls at a mid setting. After installation, JennAir says to allow 24 hours for the unit to reach temperature and to wait 24 hours between adjustments. When both compartments run warm, the official checks are the power first: a grounded 115 volt outlet on its own 15 or 20 amp circuit, no extension cord, the breaker or GFCI not tripped, and the unit actually switched On. A column refrigerator left in showroom or demo mode will light up and not cool at all.',
+          'JennAir rates its refrigerators for rooms between 55°F and 110°F and says not to install a built-in unit where the temperature falls below 55°F. In a Denver garage or an unheated space, that alone can explain a compressor that runs constantly or a compartment that will not hold temperature.',
+        ],
+        bullets: [
+          'Over Temperature alarm: the refrigerator has been above 48°F or the freezer above 15°F for more than an hour and a half.',
+          'PO on the display: a power outage happened and the freezer reached 18°F or warmer while it was out. Check the food.',
+          'A flashing F: turn the power off for 1 minute. If the F comes back, JennAir says to schedule service. Call for Service on the display: switch the breaker off for 5 minutes first.',
+          'Ice on column models: allow 24 hours for the first batch, discard the first three batches and give the bin 2 to 3 days to fill; production is about 3.2 pounds a day. Low water pressure gives slow or hollow ice, and JennAir recommends replacing the water filter every 6 months.',
+        ],
+      },
+      {
+        id: 'dishwasher',
+        heading: 'JennAir dishwasher repair: F codes and flashing lights',
+        paragraphs: [
+          'A JennAir dishwasher with a display reports a fault as an F and E pair, for example F9E1. Models without a display flash a light in a pattern instead: 9 flashes, a pause and 1 flash is the same long drain fault. For any of them, JennAir\'s first step is to cut the power for 30 seconds by unplugging the dishwasher or switching its breaker off. If the code comes back, it needs service.',
+        ],
+        bullets: [
+          'F9E1, long drain, and F9E2, drain motor: clean the filter, check the drain hose for kinks or clogs, run the disposer and, on a new installation, make sure the disposer knockout plug was removed. JennAir suggests pushing a pencil about 3 inches into the disposer inlet to check. The drain loop should sit at least 20 inches from the floor; below that, use an air gap.',
+          'F8E4, water in the base drip tray: check the water connections and the float switch and empty the tray. Excess suds can also trip it. Press Cancel once to silence the alarm and again to clear it.',
+          'F8E5, fill valve stuck open: turn the water supply to the dishwasher off and book service. H2O means the dishwasher is not detecting water.',
+          'F6E3, too many suds: remove the suds and run a cleaning cycle. F6E4, the float switch: check that the dishwasher is level.',
+          'F7E2 points to the wash motor, F4E2 and F4E3 to the heating system and F1E1 to the control module. These are parts, not owner fixes.',
+        ],
+      },
+      {
+        id: 'dishwasher-cleaning',
+        heading: 'JennAir dishwasher not cleaning',
+        paragraphs: [
+          'Before booking a repair for dirty dishes, check what JennAir checks: the water valve under the sink fully open, water pressure between 20 and 120 psi, rinse aid in the dispenser, and water reaching the dishwasher at 120°F. Running the kitchen hot faucet until it is hot before starting a cycle helps. JennAir also says to clean the filter regularly: on models with a twist-out filter it comes out with a quarter turn counterclockwise, rinses under the tap and takes a soft brush for hard water deposits. A little standing water in the filter area is normal. If the filter is clean, the water is hot and dishes still come out dirty, the dishwasher needs a diagnosis.',
+        ],
+      },
+      {
+        id: 'oven',
+        heading: 'JennAir wall oven and range repair: F codes and self-clean',
+        paragraphs: [
+          'JennAir wall ovens group their fault codes by the first number, and for each family JennAir gives the same first step: switch the breaker off for one minute and back on.',
+        ],
+        bullets: [
+          'F1 and F2 codes: the user interface, the keypad or the control.',
+          'F3 codes: temperature sensors. F3E0 is the upper oven sensor, F3E1 the lower oven sensor and F3E4 the meat probe.',
+          'F5 codes: the door latch or the door switch. F6 codes: the appliance manager control. F8 codes: the cooling fan or airflow.',
+          'F4 codes on combination ovens: the microwave sensors or inverter. F7 codes on steam ovens: the steam water system.',
+          'Door still locked after self-clean: the oven has to cool to about 200°F, and the latch can take 30 to 90 minutes to release. Pressing Cancel/Off starts a latch reset of 20 to 30 seconds. A latch that stays stuck after that needs service.',
+          'Call Service on a range or oven: press Cancel. If it returns, switch the breaker off for one minute, start a bake and watch it for a minute.',
+        ],
+      },
+      {
+        id: 'gas-cooktop',
+        heading: 'JennAir gas cooktop, range and downdraft at Denver altitude',
+        paragraphs: [
+          'For a JennAir gas burner that will not light, JennAir says to clean the ports with a pin or a small wire, never a toothpick, and to make sure the cap is seated, centered and matched to its base. If none of the burners light, check the 120 volt outlet, the breaker and the main gas valve, and after a new installation let the air purge from the line. All burners click when one is turned to LITE; a burner that keeps clicking is often damp and needs to dry. On models with an electronic lockout, the burners do not light during a power failure.',
+          'Altitude depends on the model. The installation instructions for JennAir commercial-style gas cooktops rate the burners for elevations up to 2,000 feet, reduce them by 4 percent for each 1,000 feet above sea level, and require a high altitude conversion kit above 6,560 feet. Pro-style gas ranges have their own kits above 6,560 feet, while the commercial-style gas and dual fuel range instructions say reorificing is not required. Denver, at about 5,280 feet, is below the kit line. For downdraft cooktops and ranges, JennAir reduces the recommended vent run by 20 percent above 4,500 feet, which applies across the metro.',
+        ],
+      },
+      {
+        id: 'microwave-coffee',
+        heading: 'JennAir microwave drawer and built-in coffee system',
+        paragraphs: [
+          'A JennAir microwave drawer that will not run is first checked for power and the breaker, then for Control Lock (hold the button for 3 seconds to release it), a timer left running, and Demo Mode. JennAir\'s heating test is 1 cup of water for 1 minute on HI. A built-in coffee system runs a SELF DIAGNOSIS with a preheat and rinse each time its main power comes on, and it cannot be interrupted; that is normal. For coffee that is not hot enough, JennAir suggests preheating the cups, using the Rinse function and raising the coffee temperature setting. Leaks from the service door or water from the spouts instead of coffee are faults to diagnose.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'JennAir warranty and who to call',
+        paragraphs: [
+          'JennAir warranty terms depend on the appliance and on when your warranty was printed, so the warranty in your own documents is what counts. The current JennAir major appliance warranty gives 2 years of parts and labor from the date of delivery. On refrigeration, the sealed system (compressor, evaporator, condenser, dryer and tubing) is covered for parts and labor in years 3 to 6 and for parts only in years 7 to 12. Older cooking and dishwasher warranties add 3 to 5 years of parts-only coverage on specific components such as electronic controls, elements, sealed gas burners and the dishwasher wash system.',
+          'Warranty service is done by authorized JennAir service providers and booked through JennAir at 1-800-JENNAIR (1-800-536-6247) or service.jennair.com. The current warranty does not cover damage caused by unauthorized servicers, though it states that using one will not void the warranty itself. Inside the warranty, call JennAir first: a covered repair should cost you nothing.',
+          `Once the warranty has ended, or for a part it no longer covers, you choose who repairs it. That is where an independent company makes sense: the service call is ${SERVICE_CALL_FEE} and you see the repair price before you agree to it. If your refrigerator has a sealed system problem in years 7 to 12, ask JennAir about the parts-only coverage first.`,
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: where the JennAir model and serial number are',
+        paragraphs: [
+          'JennAir publishes the tag locations. A built-in dishwasher has it on the left side of the tub frame. French door and bottom freezer refrigerators carry it inside the fresh food section on the left, side-by-side models on the right. Built-in wall ovens have it at the top of the oven cavity, commercial-style ranges on the ceiling of the oven cavity, and other ranges on the oven frame or the storage drawer frame. Gas cooktops carry the rating plate on the underside, a retractable downdraft on the front above the terminal box cover, and a built-in microwave under the control panel along the vent on the right. Send a photo of the tag, the code on the display and the symptom in one sentence.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'JennAir repair across the Denver Metro area',
+        paragraphs: [
+          'We repair JennAir appliances in Denver, Cherry Creek, Cherry Hills Village, Greenwood Village, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Castle Pines, Castle Rock, Parker, Aurora, Lakewood, Golden, Arvada, Westminster and Broomfield. Same-day appointments depend on where you are and what failed; call with the model number and the code and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you an authorized JennAir repair service?',
+        a: 'No. H-Prime is an independent appliance repair company. JennAir warranty repairs are done by authorized JennAir service providers, booked at 1-800-JENNAIR (1-800-536-6247) or service.jennair.com. We repair JennAir appliances out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does JennAir appliance repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because a clogged dishwasher filter and a built-in refrigerator control are very different jobs.`,
+      },
+      {
+        q: 'What does F9E1 mean on my JennAir dishwasher?',
+        a: 'F9E1 is a long drain. Clean the filter, check the drain hose for kinks, run the disposer and confirm the knockout plug was removed, then cut the power for 30 seconds. If F9E1 returns, book a visit.',
+      },
+      {
+        q: 'My JennAir refrigerator is not cooling. What should I check?',
+        a: 'Check that it is switched On, that the outlet, breaker and GFCI are fine, and that a column model is not in showroom mode. Give it 24 hours after any change. JennAir rates its refrigerators for rooms from 55°F to 110°F. If it still runs warm, book a diagnosis.',
+      },
+      {
+        q: 'Why is my JennAir oven door locked after self-clean?',
+        a: 'The oven has to cool to about 200°F, and the latch can take 30 to 90 minutes to release. Pressing Cancel/Off starts a latch reset of 20 to 30 seconds. If the door stays locked after that, the latch needs service.',
+      },
+      {
+        q: 'What does the JennAir warranty cover?',
+        a: 'The current JennAir major appliance warranty gives 2 years of parts and labor, and refrigerator sealed systems get parts and labor through year 6 and parts only through year 12. Older cooking and dishwasher warranties differ, so check the one that came with your appliance.',
+      },
+      {
+        q: 'Which JennAir appliances do you repair?',
+        a: 'Built-in, column and French door refrigerators and freezers, dishwashers, wall ovens, gas, dual fuel and electric ranges, gas, electric and downdraft cooktops, microwave drawers and built-in coffee systems.',
+      },
+    ],
+  },
+
+  samsung: {
+    slug: 'samsung',
+    name: 'Samsung',
+    title: 'Samsung Appliance Repair Denver | Dryer, Washer, Fridge, Oven',
+    description:
+      `Independent Samsung appliance repair in Denver Metro: dryers, washers with 4C / 5C / UE codes, refrigerators, ranges and ovens, dishwashers. ${SERVICE_CALL_FEE} service call.`,
+    h1: 'Samsung Appliance Repair in Denver',
+    subtitle: `Dryers, washers, refrigerators, ranges and ovens, dishwashers, microwaves • Same-day service • ${SERVICE_CALL_FEE} service call`,
+    intro: [
+      'Samsung home appliances report almost every problem with a short information code on the display, and Samsung publishes what most of those codes mean and what to try first. This page collects those official checks for the Samsung appliances we repair across the Denver Metro area: front-load and top-load washers, electric and gas dryers, French door and side-by-side refrigerators, gas and electric ranges and wall ovens, dishwashers and microwaves.',
+      `H-Prime is an independent appliance repair company. We are not a Samsung service center and not a Samsung authorized servicer, and Samsung warranty repairs go through Samsung. Out of warranty, the service call is ${SERVICE_CALL_FEE}: you get a diagnosis first and a written price before any repair starts.`,
+    ],
+    sections: [
+      {
+        id: 'dryer',
+        heading: 'Samsung dryer repair: not heating, long cycles, codes',
+        paragraphs: [
+          'Most Samsung dryer codes point to air, power or a sensor, and Samsung\'s own code guide says the most common cause of the temperature codes is a clogged lint screen or vent. Samsung recommends cleaning the lint filter every cycle and the vent once or twice a year, and says not to use plastic or foil vent duct. The gas dryer manual allows up to 80 feet of rigid 4 inch duct with no elbows but only 47 feet with three; Samsung\'s support page adds that each 90 degree turn cuts the maximum length by 6 feet.',
+        ],
+        bullets: [
+          'tS, tC, tO or tE: a temperature sensor code. Clean the lint screen and check the vent for restrictions first.',
+          'HC or hE: a heating problem. Clean the lint filter and vent; on an electric dryer, low voltage is a job for an electrician.',
+          '9C1, 9E or 2E: a voltage error. The dryer should be on its own circuit with no extension cord, and an electric dryer needs 240 volts. An electric dryer runs on two circuits, so with one breaker tripped it spins but does not heat.',
+          'dC, dE, d0 or do: the door. Ct means the room is below freezing or above 104°F, worth knowing for a garage laundry in a Denver winter.',
+          '3C (motor), oD (dry time) and HC2 (gas ignition): turn the power off for 2 to 3 minutes and restart. If the code comes back, the dryer needs service.',
+        ],
+      },
+      {
+        id: 'washer',
+        heading: 'Samsung washer repair: 4C, 5C, UE, LE and dC codes',
+        paragraphs: [
+          'Samsung\'s washer code guide groups the information codes by what they check. For a code not listed, Samsung says to turn the washer off for 2 to 3 minutes and restart. On front loaders, Samsung recommends cleaning the pump (debris) filter at least once a month or about every 40 washes and running Self Clean or Pure Cycle once a month.',
+        ],
+        bullets: [
+          '4C, 4E or nF, not filling: hot hose to hot, cold to cold, both valves fully open, then unplug for 1 minute and clean the inlet filters. 4C2 or 4E2 means the hoses are swapped.',
+          '5C, 5E or nd, not draining: the drain hose goes 6 to 8 inches into the standpipe, not airtight and not kinked, at least 18 and no more than 96 inches high, with no extension kit. Clean the pump filter on a front loader. After a hot cycle, wait about an hour before draining.',
+          'UE, Ub, U6 or Ur, unbalanced load: redistribute the load. Ur means the washer is retrying, not a fault.',
+          'LE, LC, 1E or 1C, water level or leak: look for a leak, check that the hoses are not kinked and run an empty cycle to check for suds. SUd or Sd is excessive suds from the detergent, and Samsung says no service is needed.',
+          'dC, dE, dS or dL is a door error on most models, though on some dC means an unbalanced load. 3E or 3C is a motor error and HC or HE a heater error: those are repairs.',
+        ],
+      },
+      {
+        id: 'refrigerator',
+        heading: 'Samsung refrigerator and freezer repair: not cooling, ice maker, codes',
+        paragraphs: [
+          'Samsung sets most refrigerators to 38°F in the fresh food section and -2°F in the freezer, and says the unit can take up to 28 hours to reach a new setting. Before booking a refrigerator repair, check Samsung\'s list: 2 inches of clearance at the top, back and sides, food kept 2 inches from the vents, the door gasket passing the dollar bill test, and a room above 55°F, since a colder room reduces performance. A display showing OF OF, O FF or scrolling bars means Cooling Off (demo) mode: the lights work and nothing cools. That is a setting, not a failure, and Samsung gives the button sequence in its support article.',
+          'If a code appears, Samsung asks owners not to unplug the refrigerator or press the panel unless the guide tells them to, because that makes the fault harder for a technician to read. Write the code down before calling.',
+        ],
+        bullets: [
+          '21E is the freezer fan, often frozen because a door or gasket does not seal; 22E or 22C is the refrigerator fan; 40E or 40C the ice room fan.',
+          '5E is the refrigerator defrost sensor, 8E and 14E ice maker sensors, 33E the ice pipe heater and 39E or 39C the ice maker function. 84C is a compressor lock.',
+          '83E, 85E, 86E or 88 88 point to power: turn the refrigerator off for 60 seconds. Codes not on Samsung\'s list need service.',
+          'Ice maker: the freezer must be at 0°F or colder and the water pressure at least 20 psi. Samsung says not to defrost the ice maker yourself; one that keeps freezing over needs service, and smart models may need a firmware update through SmartThings.',
+        ],
+      },
+      {
+        id: 'oven',
+        heading: 'Samsung oven, range and stove repair',
+        paragraphs: [
+          'On Samsung ranges and wall ovens, -dE- or -dC- points to the partition not being installed or to the door. tESt or tE5t is demo mode and the oven will not heat. bAd LinE points to the power connection and C-24 to a blocked vent. For other codes Samsung says to turn the oven off and on, then switch the breaker off for 30 seconds, and to request service if the code returns. Self Clean will not start while the partition or the probe is in, the warming drawer is on or the cooktop is in use; Loc on the display is Control Lock.',
+          'On a Samsung gas range, all burners spark and click when any knob is at LITE. Continuous clicking after the burner lights usually means moisture on the ignition switches: let it dry, and if it continues, call a technician. If a burner will not light, the gas range manual says to check the plug, the breaker, the gas supply, the burner caps, the electrodes and the burner base alignment. Large or yellow flames point to the wrong orifice for the gas type, LP versus natural gas, and Samsung says to contact the installer. An oven burner that will not light with a working cooktop can be the shut-off on the gas pressure regulator. If you smell gas, leave the house and call the gas supplier from a neighbor\'s phone.',
+        ],
+      },
+      {
+        id: 'dishwasher',
+        heading: 'Samsung dishwasher repair: 5C, 4C, LC and 1E codes',
+        paragraphs: [
+          'Samsung says to troubleshoot a dishwasher code before resetting it. 5C, SC, 5E or SE is a drain problem: check the sink drain and the disposal (the knockout cap must be removed), that the drain hose is not pinched under the unit, and the air gap or high loop. Run the sink for 30 seconds; if the sink itself will not drain, Samsung says that is a job for a plumber. 4C or 4E is the water supply. 1E on Waterwall models means a clogged filter, cleared by cleaning it. LC or LE is the leak sensor: the dishwasher drains and will not turn off. HE and HC are heater codes, 3C the pump and tE the temperature sensor. A code that returns after the checks needs a diagnosis.',
+        ],
+      },
+      {
+        id: 'microwave',
+        heading: 'Samsung microwave repair',
+        paragraphs: [
+          'For a Samsung microwave code, Samsung\'s first step is to unplug the microwave or switch off its breaker, let it dry if moisture got in, and wait 60 seconds. C-d0, C-d1 or C-d2 relate to the door or a key, C-F0 to C-F2 to communication, C-20 to C-22 to the temperature sensor and -SE- to a shorted key. A code that comes back after the reset needs service.',
+        ],
+      },
+      {
+        id: 'warranty',
+        heading: 'Samsung warranty and the Samsung service number',
+        paragraphs: [
+          'Samsung says most of its appliances come with a one-year manufacturer\'s warranty for parts and labor. Refrigerators add 5 years of parts and labor on the sealed refrigeration system and 10 years of parts with 5 years of labor on the Digital Inverter compressor. Washers bought on or after April 1, 2026 get 10 years of coverage on the Digital Inverter motor, and older washer manuals list parts-only terms on the motor and the tub, so check the warranty for your model and keep the receipt.',
+          'Samsung states that only authorized Samsung service centers can perform covered repairs, and its warranty does not cover unauthorized repairs or parts Samsung did not supply. The Samsung support number is 1-800-SAMSUNG (1-800-726-7864), or request service online after registering the product. Inside the warranty, call Samsung first.',
+          `Once the warranty has ended, you choose who repairs it. With an independent company the service call is ${SERVICE_CALL_FEE} and you see the repair price before you agree to it. If a refrigerator compressor or a newer washer motor fails after year one, ask Samsung about the extended coverage first.`,
+        ],
+      },
+      {
+        id: 'before-you-call',
+        heading: 'Before you call: the Samsung model number and the code',
+        paragraphs: [
+          'Samsung parts are specific to the model. On a refrigerator, Samsung puts the model and serial label on the lower left side of the exterior near the front, with a second label inside on a side wall above the top shelf. On other Samsung appliances, find the label with the model and serial number and send a photo of the label, the code on the display and the symptom in one sentence, and we can check parts before the visit.',
+        ],
+      },
+      {
+        id: 'service-area',
+        heading: 'Samsung appliance repair across the Denver Metro area',
+        paragraphs: [
+          'We repair Samsung appliances in Denver, Aurora, Lakewood, Arvada, Westminster, Thornton, Northglenn, Commerce City, Broomfield, Golden, Englewood, Littleton, Centennial, Lone Tree, Highlands Ranch, Parker and Castle Rock. Same-day appointments depend on where you are and what failed; call with the model number and the code and you get the earliest realistic slot.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are you a Samsung service center in Denver?',
+        a: 'No. H-Prime is an independent appliance repair company, not a Samsung service center or authorized servicer. Samsung warranty repairs are booked through Samsung at 1-800-SAMSUNG (1-800-726-7864). We repair Samsung appliances out of warranty, with a price agreed before any work.',
+      },
+      {
+        q: 'How much does Samsung appliance repair cost in Denver?',
+        a: `The service call is ${SERVICE_CALL_FEE}. After the diagnosis you get a written price before any repair starts. We do not publish repair prices because a clogged dryer vent and a refrigerator ice maker are very different jobs.`,
+      },
+      {
+        q: 'Why is my Samsung dryer not heating?',
+        a: 'Clean the lint screen and check the vent first; Samsung says that is the most common cause of temperature codes. On an electric dryer, check both breakers: with one tripped, the dryer spins without heat. If it stays cold, book a diagnosis.',
+      },
+      {
+        q: 'What does 5C mean on my Samsung washer?',
+        a: '5C, 5E or nd means the washer is not draining. Check that the drain hose is not kinked and sits 6 to 8 inches into the standpipe, and clean the pump filter on a front loader. If the code returns, book a visit.',
+      },
+      {
+        q: 'My Samsung refrigerator shows OF OF and is not cooling. Is it broken?',
+        a: 'OF OF means Cooling Off (demo) mode, which turns off cooling while the lights and display keep working. Samsung says service is not required; its support article gives the button sequence to turn it off.',
+      },
+      {
+        q: 'What does the Samsung appliance warranty cover?',
+        a: 'Most Samsung appliances have one year of parts and labor. Refrigerators get 5 years on the sealed system and 10 years of parts with 5 years of labor on the Digital Inverter compressor. Covered repairs must be done by an authorized Samsung service center.',
+      },
+      {
+        q: 'Which Samsung appliances do you repair?',
+        a: 'Front-load and top-load washers, electric and gas dryers, refrigerators and freezers, gas and electric ranges, wall ovens and cooktops, dishwashers and microwaves. We do not repair Samsung TVs or phones.',
+      },
+    ],
+  },
 };
 
 export function getBrandContent(slug: string): BrandContent | undefined {
