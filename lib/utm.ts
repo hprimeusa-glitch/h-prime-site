@@ -7,6 +7,7 @@ const STORAGE_KEY = 'hp_ads_campaign';
 // Codes match the lead-tracking sheet: PMAX / GARD / BSRD / BSRD-N / TR-DM / GER-DM.
 const CAMPAIGN_TO_AD_GROUP: Record<string, string> = {
   '23624394945': 'GARD',
+  '24393908323': 'GARD', // AI Max experiment trial of 23624394945 (2026-10-24 to 2026-11-20)
   '23629853246': 'BSRD',
   '23952499632': 'BSRD-N',
   '23744418940': 'PMAX',
