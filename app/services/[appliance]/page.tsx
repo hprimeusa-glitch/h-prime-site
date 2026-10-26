@@ -7,11 +7,18 @@ import Reviews from '@/components/Reviews';
 import WhyChooseUs from "@/components/WhyChooseUs";
 import BrandsSection from "@/components/BrandsSection";
 import SEOContent from '@/components/SEOContent';
+import ServiceDeepContent from '@/components/ServiceDeepContent';
 import { appliances } from '@/lib/data/appliances';
 import { brands } from '@/lib/data/brands';
 import { getBrandsForAppliance } from '@/lib/data/serviceBrands';
+import { getServiceContent } from '@/lib/data/serviceContent';
 import { generatePageMetadata } from '@/lib/seo/metadata';
-import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo/schema';
+import {
+  generateLocalBusinessSchema,
+  generateServiceSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+} from '@/lib/seo/schema';
 
 interface PageProps {
   params: Promise<{
@@ -34,8 +41,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cleanSlug = applianceSlug.replace('-repair', '');
   const appliance = appliances.find(a => a.slug === cleanSlug);
   if (!appliance) return {};
-  
-  return generatePageMetadata({ appliance: cleanSlug });
+
+  const base = generatePageMetadata({ appliance: cleanSlug });
+  const deep = getServiceContent(cleanSlug);
+  if (!deep) return base;
+
+  // Hand-written hubs carry their own title and description; canonical, robots and
+  // images stay as built.
+  return {
+    ...base,
+    title: deep.title,
+    description: deep.description,
+    openGraph: { ...(base.openGraph ?? {}), title: deep.title, description: deep.description },
+    twitter: { ...(base.twitter ?? {}), title: deep.title, description: deep.description },
+  };
 }
 
 export default async function ApplianceRepairPage({ params }: PageProps) {
@@ -55,7 +74,8 @@ export default async function ApplianceRepairPage({ params }: PageProps) {
   const localBusinessSchema = generateLocalBusinessSchema({ appliance: cleanSlug });
   const serviceSchema = generateServiceSchema({ appliance: cleanSlug });
   const breadcrumbSchema = generateBreadcrumbSchema({ appliance: cleanSlug });
-  
+  const deep = getServiceContent(cleanSlug);
+
   return (
     <>
       {/* JSON-LD Schema */}
@@ -71,8 +91,14 @@ export default async function ApplianceRepairPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
-      <Hero 
+      {deep && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(deep.faqs)) }}
+        />
+      )}
+
+      <Hero
         title={`Same-Day ${appliance.name} Repair in Denver Metro area`}
         subtitle="Expert repair service for all major brands • Same-day appointments available"
         applianceImage={appliance.image}
@@ -152,8 +178,8 @@ export default async function ApplianceRepairPage({ params }: PageProps) {
         </div>
       </section>
       
-      {/* SEO Content */}
-      <SEOContent appliance={cleanSlug} />
+      {/* SEO Content: the hand-written block when the hub has one, else the template */}
+      {deep ? <ServiceDeepContent content={deep} /> : <SEOContent appliance={cleanSlug} />}
       
       {/* Brands Section - Filtered */}
       <section className="py-16 bg-white">

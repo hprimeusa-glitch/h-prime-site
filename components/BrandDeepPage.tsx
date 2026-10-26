@@ -81,6 +81,31 @@ export default function BrandDeepPage({ content, brand, applianceSlugs, reviews 
         </div>
       </section>
 
+      {/* Service hubs for this brand, right under the intro: the page states what we
+          repair before it explains codes (the long-form layout alone lost positions on
+          commercial queries, SEO/brand-rewrite-control-2026-10-26.json). */}
+      {hubs.length > 0 && (
+        <section className="py-10 bg-white">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+              {brand.name} repair services in Denver
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+              {hubs.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/services/${a.slug}-repair`}
+                  prefetch={false}
+                  className="bg-gray-50 p-5 rounded-lg hover:shadow-lg transition text-center border border-gray-200"
+                >
+                  <span className="font-semibold text-gray-900">{brand.name} {a.name} Repair</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Sections */}
       {content.sections.map((s, idx) => (
         <section key={s.id} id={s.id} className={`py-12 ${idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'} scroll-mt-24`}>
@@ -104,28 +129,6 @@ export default function BrandDeepPage({ content, brand, applianceSlugs, reviews 
         </section>
       ))}
 
-      {/* Service hubs for this brand */}
-      {hubs.length > 0 && (
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              {brand.name} appliances we repair
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-              {hubs.map((a) => (
-                <Link
-                  key={a.slug}
-                  href={`/services/${a.slug}-repair`}
-                  prefetch={false}
-                  className="bg-gray-50 p-5 rounded-lg hover:shadow-lg transition text-center border border-gray-200"
-                >
-                  <span className="font-semibold text-gray-900">{a.name} Repair</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Reviews: the brand's own when they exist, otherwise the profile's latest */}
       <Reviews items={reviews} title={reviews.length > 0 && content.reviewsTitle ? content.reviewsTitle : undefined} />

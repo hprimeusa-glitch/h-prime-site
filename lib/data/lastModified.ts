@@ -23,6 +23,10 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   '/brands/frigidaire-repair': '2026-10-19',
   '/brands/jennair-repair': '2026-10-19',
   '/brands/samsung-repair': '2026-10-19',
+  '/services/dryer-repair': '2026-10-26',
+  '/services/freezer-repair': '2026-10-26',
+  '/services/cooktop-repair': '2026-10-26',
+  '/services/microwave-repair': '2026-10-26',
 };
 
 /** Date for one pathname: the page's own rewrite date if it is newer than the template. */
