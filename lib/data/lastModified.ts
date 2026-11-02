@@ -27,6 +27,8 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   '/services/freezer-repair': '2026-10-26',
   '/services/cooktop-repair': '2026-10-26',
   '/services/microwave-repair': '2026-10-26',
+  '/services/gas-dryer-repair': '2026-11-02',
+  '/services/wine-cooler-repair': '2026-11-02',
 };
 
 /** Date for one pathname: the page's own rewrite date if it is newer than the template. */

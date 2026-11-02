@@ -10,7 +10,8 @@
  * the commercial signal of the page.
  *
  * Written against the Search Console queries of each hub (90 days to 2026-10-24); every
- * fact has its source in Clients/H-Prime/SEO/sources-2026-10-26/<slug>-sources.md.
+ * fact has its source in Clients/H-Prime/SEO/sources-2026-10-26/<slug>-sources.md
+ * (gas-dryer and wine-cooler, 2026-11-02: sources-2026-11-02/).
  */
 
 export interface ServiceSection {
@@ -42,8 +43,17 @@ import { content as dryer } from '@/lib/data/services/dryer';
 import { content as freezer } from '@/lib/data/services/freezer';
 import { content as cooktop } from '@/lib/data/services/cooktop';
 import { content as microwave } from '@/lib/data/services/microwave';
+import { content as gasDryer } from '@/lib/data/services/gas-dryer';
+import { content as wineCooler } from '@/lib/data/services/wine-cooler';
 
-export const serviceContent: Record<string, ServiceContent> = { dryer, freezer, cooktop, microwave };
+export const serviceContent: Record<string, ServiceContent> = {
+  dryer,
+  freezer,
+  cooktop,
+  microwave,
+  'gas-dryer': gasDryer,
+  'wine-cooler': wineCooler,
+};
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
   return serviceContent[slug];
