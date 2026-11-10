@@ -6,11 +6,16 @@
  * changed. TEMPLATE_LAST_MODIFIED is the last change that touched every page
  * (2026-09-20: real reviews, live rating, unverified claims removed). Bump it only for a site-wide content change, not for footer or
  * metadata tweaks; add a page here when its body is rewritten.
+ *
+ * Blog posts are not listed here: their <lastmod> comes from the post's own
+ * frontmatter (updatedDate, else publishedDate), see lib/blog.ts. '/blog' below is
+ * the date of the listing page itself, used only while it has no newer post.
  */
 export const TEMPLATE_LAST_MODIFIED = '2026-09-20';
 
 const PAGE_LAST_MODIFIED: Record<string, string> = {
-  '/brands/thermador-repair': '2026-09-21',
+  '/blog': '2026-11-10',
+  '/brands/thermador-repair': '2026-11-10', // back on the standard brand template
   '/brands/whirlpool-repair': '2026-09-21',
   '/brands/lg-repair': '2026-09-21',
   '/brands/ge-repair': '2026-09-21',

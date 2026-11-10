@@ -1474,6 +1474,16 @@ export const brandContent: Record<string, BrandContent> = {
   },
 };
 
+/**
+ * Brands whose hand-written entry stays in this file but is not rendered: their page
+ * uses the standard brand template (generic title, description and layout).
+ * Thermador since 2026-11-10: experiment, does the standard template win back the
+ * broad Thermador queries the deep page lost; Whirlpool stays deep as the control.
+ * Remove a slug from this set to bring its deep page back unchanged.
+ */
+const STANDARD_TEMPLATE_BRANDS = new Set<string>(['thermador']);
+
 export function getBrandContent(slug: string): BrandContent | undefined {
+  if (STANDARD_TEMPLATE_BRANDS.has(slug)) return undefined;
   return brandContent[slug];
 }
