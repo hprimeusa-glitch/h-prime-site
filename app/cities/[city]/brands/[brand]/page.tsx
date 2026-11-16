@@ -122,9 +122,6 @@ export default async function CityBrandPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* SEO Content */}
-      <SEOContent city={citySlug} brand={cleanBrandSlug} county={city.county} />
-
       {/* Why Choose Us Section */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -187,8 +184,10 @@ export default async function CityBrandPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* Reviews Section */}
       <Reviews />
+
+      {/* Long-form SEO text sits below reviews so the selling blocks come first */}
+      <SEOContent city={citySlug} brand={cleanBrandSlug} county={city.county} />
     </>
   );
 }

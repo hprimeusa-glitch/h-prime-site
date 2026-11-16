@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { Clock, Wrench, Users, CheckCircle } from 'lucide-react';
 import Hero from '@/components/Hero';
 import Reviews from '@/components/Reviews';
-import WhyChooseUs from "@/components/WhyChooseUs";
-import BrandsSection from "@/components/BrandsSection";
 import SEOContent from '@/components/SEOContent';
 import ServiceDeepContent from '@/components/ServiceDeepContent';
 import { appliances } from '@/lib/data/appliances';
@@ -178,10 +176,7 @@ export default async function ApplianceRepairPage({ params }: PageProps) {
         </div>
       </section>
       
-      {/* SEO Content: the hand-written block when the hub has one, else the template */}
-      {deep ? <ServiceDeepContent content={deep} /> : <SEOContent appliance={cleanSlug} />}
-      
-      {/* Brands Section - Filtered */}
+      {/* Brands Section - Filtered (the only brands block on this page) */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -227,10 +222,10 @@ export default async function ApplianceRepairPage({ params }: PageProps) {
         </div>
       </section>
       
-      {/* Reviews Section */}
-      <WhyChooseUs />
-      <BrandsSection />
       <Reviews />
+
+      {/* Long-form SEO text sits below reviews so the selling blocks come first */}
+      {deep ? <ServiceDeepContent content={deep} /> : <SEOContent appliance={cleanSlug} />}
     </>
   );
 }
