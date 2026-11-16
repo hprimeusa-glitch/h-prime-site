@@ -1,6 +1,8 @@
-import Link from 'next/link';
+import { Clock, Shield, Users, Wrench } from 'lucide-react';
 import Hero from '@/components/Hero';
 import Reviews from '@/components/Reviews';
+import ApplianceCards from '@/components/ApplianceCards';
+import BenefitCards from '@/components/BenefitCards';
 import type { BrandContent } from '@/lib/data/brandContent';
 import type { Review } from '@/lib/data/reviews';
 import type { Brand } from '@/lib/data/brands';
@@ -54,7 +56,34 @@ export default function BrandDeepPage({ content, brand, applianceSlugs, reviews 
         brandLogo={brand.logo}
       />
 
-      {/* Intro */}
+      {/* Service hubs with photos right under the hero: the page states what we repair
+          first (the long-form layout alone lost positions on commercial queries,
+          SEO/brand-rewrite-control-2026-10-26.json). */}
+      <ApplianceCards
+        heading={`${brand.name} repair services in Denver`}
+        items={hubs.map((a) => ({
+          key: a.slug,
+          href: `/services/${a.slug}-repair`,
+          title: `${brand.name} ${a.name} Repair`,
+          image: a.image,
+          alt: `${brand.name} ${a.name.toLowerCase()} repair`,
+        }))}
+      />
+
+      <BenefitCards
+        heading={`Why Choose Us for ${brand.name} Repairs?`}
+        items={[
+          { icon: Wrench, title: `${brand.name} Specialists`, text: `We service all ${brand.name} appliances` },
+          { icon: Clock, title: 'Same-Day Service', text: 'Fast appointments throughout Denver Metro' },
+          { icon: Shield, title: 'The Right Parts', text: `Parts matched to your ${brand.name} model` },
+          { icon: Users, title: 'Fully Insured', text: 'Insured for your peace of mind' },
+        ]}
+      />
+
+      {/* Reviews: the brand's own when they exist, otherwise the profile's latest */}
+      <Reviews items={reviews} title={reviews.length > 0 && content.reviewsTitle ? content.reviewsTitle : undefined} />
+
+      {/* Long-form text below reviews so the selling blocks come first */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-gray-700 space-y-4">
@@ -81,31 +110,6 @@ export default function BrandDeepPage({ content, brand, applianceSlugs, reviews 
         </div>
       </section>
 
-      {/* Service hubs for this brand, right under the intro: the page states what we
-          repair before it explains codes (the long-form layout alone lost positions on
-          commercial queries, SEO/brand-rewrite-control-2026-10-26.json). */}
-      {hubs.length > 0 && (
-        <section className="py-10 bg-white">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              {brand.name} repair services in Denver
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-              {hubs.map((a) => (
-                <Link
-                  key={a.slug}
-                  href={`/services/${a.slug}-repair`}
-                  prefetch={false}
-                  className="bg-gray-50 p-5 rounded-lg hover:shadow-lg transition text-center border border-gray-200"
-                >
-                  <span className="font-semibold text-gray-900">{brand.name} {a.name} Repair</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Sections */}
       {content.sections.map((s, idx) => (
         <section key={s.id} id={s.id} className={`py-12 ${idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'} scroll-mt-24`}>
@@ -128,10 +132,6 @@ export default function BrandDeepPage({ content, brand, applianceSlugs, reviews 
           </div>
         </section>
       ))}
-
-
-      {/* Reviews: the brand's own when they exist, otherwise the profile's latest */}
-      <Reviews items={reviews} title={reviews.length > 0 && content.reviewsTitle ? content.reviewsTitle : undefined} />
 
       {/* FAQ */}
       <section id="faq" className="py-16 bg-white scroll-mt-24">

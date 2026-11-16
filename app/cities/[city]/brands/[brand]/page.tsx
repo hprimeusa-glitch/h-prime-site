@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { CheckCircle, Clock, MapPin, Wrench } from 'lucide-react';
+import ApplianceCards from '@/components/ApplianceCards';
+import BenefitCards from '@/components/BenefitCards';
 import Hero from '@/components/Hero';
 import Reviews from '@/components/Reviews';
 import SEOContent from '@/components/SEOContent';
@@ -89,77 +91,25 @@ export default async function CityBrandPage({ params }: PageProps) {
         brandLogo={brand.logo}
       />
 
-      {/* Appliances We Repair Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            {brand.name} Appliances We Repair in {city.name}
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {appliances.map((appliance) => (
-              <Link
-                key={appliance.slug}
-                href={`/cities/${citySlug}/brands/${brandSlug}/services/${appliance.slug}-repair`}
-                prefetch={false}
-                className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition text-center"
-              >
-                {appliance.image && (
-                  <div className="relative w-16 h-16 mx-auto mb-3">
-                    <Image
-                      src={appliance.image}
-                      alt={`${brand.name} ${appliance.name} Repair`}
-                      fill
-                      className="object-contain"
-                      sizes="64px"
-                    />
-                  </div>
-                )}
-                <h3 className="font-semibold text-gray-900">{appliance.name}</h3>
-                <p className="text-sm text-gray-600 mt-2">{brand.name} {appliance.name} Repair</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ApplianceCards
+        heading={`${brand.name} Appliances We Repair in ${city.name}`}
+        items={appliances.map((appliance) => ({
+          key: appliance.slug,
+          href: `/cities/${citySlug}/brands/${brandSlug}/services/${appliance.slug}-repair`,
+          title: `${brand.name} ${appliance.name} Repair`,
+          image: appliance.image,
+        }))}
+      />
 
-      {/* Why Choose Us Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Why Choose Us for {brand.name} Repair in {city.name}?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔧</span>
-              </div>
-              <h3 className="font-semibold text-lg mb-2">{brand.name} Specialists</h3>
-              <p className="text-gray-600">We service all {brand.name} appliance models</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📍</span>
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Local to {city.name}</h3>
-              <p className="text-gray-600">Fast response times in your area</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">✓</span>
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Genuine {brand.name} Parts</h3>
-              <p className="text-gray-600">Only authentic replacement parts used</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Same-Day Service</h3>
-              <p className="text-gray-600">Available for {city.name} residents</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BenefitCards
+        heading={`Why Choose Us for ${brand.name} Repair in ${city.name}?`}
+        items={[
+          { icon: Wrench, title: `${brand.name} Specialists`, text: `We service all ${brand.name} appliance models` },
+          { icon: MapPin, title: `Local to ${city.name}`, text: 'Fast response times in your area' },
+          { icon: CheckCircle, title: `Genuine ${brand.name} Parts`, text: 'Only authentic replacement parts used' },
+          { icon: Clock, title: 'Same-Day Service', text: `Available for ${city.name} residents` },
+        ]}
+      />
 
       {/* Nearby Cities */}
       {nearbyCities.length > 0 && (
